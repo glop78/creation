@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Accessibilité — CREATIO</title>
+<meta name="description" content="Déclaration d'accessibilité du musée CREATIO : objectif WCAG 2.2 niveau AA, mesures mises en place, tests automatisés et limites connues.">
+<meta name="author" content="CREATIO">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://creatio.example.org/pages/accessibilite.html">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/creatio.css">
+<script src="../assets/js/creatio.js" defer></script>
+
+<meta property="og:title" content="Accessibilité">
+<meta property="og:description" content="Un musée numérique francophone : vingt-deux salles, du cosmos à la cellule, où chaque fait scientifique vérifié invite à réfléchir à la sagesse du Créateur.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://creatio.example.org/pages/accessibilite.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://creatio.example.org/assets/img/echelles/partage.jpg">
+<meta property="og:image:alt" content="Horizon lumineux sous un ciel étoilé.">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Accessibilité",
+  "description": "Déclaration d'accessibilité du musée CREATIO : objectif WCAG 2.2 niveau AA, mesures mises en place, tests automatisés et limites connues.",
+  "inLanguage": "fr-FR",
+  "isAccessibleForFree": true,
+  "url": "https://creatio.example.org/pages/accessibilite.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CREATIO — Le Musée des Merveilles de la Création",
+    "url": "https://creatio.example.org/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "CREATIO"
+  }
+}
+</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu principal</a>
+<header class="entete">
+  <div class="enveloppe entete-interieur">
+    <a class="marque" href="../index.html">
+      <span class="goutte" aria-hidden="true"></span>
+      <span><span class="marque-nom">CREATIO</span> <span class="marque-sous">Musée des Merveilles</span></span>
+      <span class="visuellement-masque">, retour à l'accueil</span>
+    </a>
+    <nav class="navigation navigation-principale" aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#ailes">Les sept ailes</a></li>
+        <li><a href="../index.html#methode">La méthode</a></li>
+          <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+          <li><a href="../pages/recherche.html">Rechercher</a></li>
+      </ul>
+    </nav>
+    <div class="outils">
+      <button class="bouton bouton-contraste" type="button" data-contraste aria-pressed="false">Contraste renforcé</button>
+    </div>
+    <details class="nav-mobile">
+      <summary class="bouton">Menu</summary>
+      <nav class="navigation" aria-label="Navigation mobile">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../index.html#ailes">Les sept ailes</a></li>
+          <li><a href="../index.html#methode">La méthode</a></li>
+          <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+          <li><a href="../pages/recherche.html">Rechercher</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+<main id="contenu">
+  <div class="enveloppe">
+    <div class="salle-entete">
+      <p class="fil-ariane"><a href="../index.html">Accueil</a> → Accessibilité</p>
+      <h1>Accessibilité</h1>
+      <p class="chapo">Objectif : le niveau AA des règles internationales d'accessibilité (WCAG 2.2). Voici ce qui est en place, comment c'est vérifié, et ce qui reste à améliorer.</p>
+    </div>
+    <figure class="salle-figure">
+      <img src="../assets/img/pages/annexe-accessibilite.jpg" alt="Un homme âgé aux cheveux blancs, casque audio sur les oreilles, écoute les yeux fermés en souriant, assis dans une salle de musée devant un grand écran courbe où brille la Voie lactée." width="1920" height="1080">
+      <figcaption>Reconstitution numérique — visiteur écoutant l'audioguide, illustration d'ambiance.</figcaption>
+    </figure>
+    <div class="annexe-contenu">
+    <section class="section" aria-labelledby="etat">
+  <p class="surtitre">Déclaration</p>
+  <h2 id="etat">État de conformité</h2>
+  <p>Le musée CREATIO vise le niveau <strong>AA</strong> des Règles pour l'accessibilité des contenus web (WCAG), version 2.2.</p>
+  <div class="note">
+    <h3>En toute transparence</h3>
+    <p>La conformité est vérifiée à chaque version par des tests automatisés (navigation au clavier, contrastes, tailles des cibles, textes de remplacement, absence de débordement sur mobile, fonctionnement avec mouvement réduit, quatre modes de rendu). <strong>Aucun audit indépendant réalisé par des personnes en situation de handicap n'a encore eu lieu</strong> : le musée se déclare donc en cours d'évaluation, et non « totalement conforme ».</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="mesures">
+  <p class="surtitre">Concrètement</p>
+  <h2 id="mesures">Ce qui est mis en place</h2>
+  <ul class="liste-simple">
+    <li><strong>Clavier</strong> : toutes les commandes (curseurs, boutons, volets, questionnaires) fonctionnent au clavier ; un lien d'évitement mène directement au contenu.</li>
+    <li><strong>Lecteurs d'écran</strong> : les résultats des interactions sont annoncés par des zones de texte actualisées ; les images portent une description ; les dessins animés purement décoratifs sont masqués.</li>
+    <li><strong>Contraste</strong> : un bouton « Contraste renforcé » est présent sur chaque page ; les couleurs par défaut visent le niveau AA.</li>
+    <li><strong>Mouvement</strong> : le musée respecte le réglage « réduire les animations » de l'appareil ; aucune animation ne démarre seule dans les interactions.</li>
+    <li><strong>Audio</strong> : chaque piste de l'audioguide est accompagnée de sa transcription intégrale ; aucune lecture automatique.</li>
+    <li><strong>Interactions graphiques</strong> : chaque interaction possède quatre modes de rendu, jusqu'à une image JPG fixe, et un texte qui donne les mêmes résultats.</li>
+    <li><strong>Cibles</strong> : les zones cliquables mesurent au moins 24 pixels de côté, conformément au critère 2.5.8.</li>
+    <li><strong>Langue</strong> : toutes les pages sont déclarées en français ; les termes étrangers sont expliqués immédiatement.</li>
+  </ul>
+</section>
+<section class="section" aria-labelledby="limites">
+  <p class="surtitre">Limites connues</p>
+  <h2 id="limites">Ce qui peut encore poser difficulté</h2>
+  <ul class="liste-simple">
+    <li>Les visualisations graphiques restent difficiles à percevoir sans la vue ; leurs résultats sont toujours donnés en texte, mais la forme du dessin n'est décrite que brièvement.</li>
+    <li>Certaines légendes contiennent des nombres en notation scientifique (par exemple 10⁻⁷), que tous les lecteurs d'écran ne prononcent pas de la même façon.</li>
+    <li>Les liens vers les sources externes mènent à des sites d'éditeurs dont l'accessibilité ne dépend pas du musée.</li>
+  </ul>
+  <p>Une adresse de contact pour signaler une difficulté sera publiée lors de la mise en ligne définitive du musée. Le fonctionnement technique est détaillé dans <a href="comment-fonctionne.html">Comment fonctionne le musée</a>.</p>
+</section>
+    </div>
+  </div>
+</main>
+<footer class="pied">
+  <div class="enveloppe">
+    <nav class="pied-annexes" aria-label="Pages annexes">
+      <ul>
+        <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+        <li><a href="../pages/recherche.html">Rechercher</a></li>
+        <li><a href="../pages/la-frise-de-la-creation.html">La frise de la création</a></li>
+        <li><a href="../pages/parcours-de-visite.html">Parcours de visite</a></li>
+        <li><a href="../pages/questions-frequentes.html">Questions fréquentes</a></li>
+        <li><a href="../pages/glossaire.html">Glossaire</a></li>
+        <li><a href="../pages/methode-et-sources.html">Méthode et sources</a></li>
+        <li><a href="../pages/accessibilite.html">Accessibilité</a></li>
+        <li><a href="../pages/credits-et-mentions.html">Crédits et mentions</a></li>
+      </ul>
+    </nav>
+    <p>CREATIO — Le Musée des Merveilles de la Création — site francophone, sans ressource externe, sans traceur ni fichier de suivi.</p>
+    <p><a href="../pages/comment-fonctionne.html">Comment fonctionne le musée</a> · <span class="reseau" data-reseau>Disponible hors connexion après la première visite</span> · Mis à jour le <time datetime="2026-10-28">28 octobre 2026</time>.</p>
+  </div>
+</footer>
+</body>
+</html>

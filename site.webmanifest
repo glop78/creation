@@ -1,0 +1,19 @@
+{
+  "name": "CREATIO — Le Musée des Merveilles de la Création",
+  "short_name": "CREATIO",
+  "description": "Un musée numérique francophone : vingt-deux salles, du cosmos à la cellule, où chaque fait scientifique vérifié invite à réfléchir à la sagesse du Créateur.",
+  "lang": "fr-FR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05070D",
+  "theme_color": "#05070D",
+  "icons": [
+    {
+      "src": "assets/img/echelles/partage.jpg",
+      "sizes": "1920x1080",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

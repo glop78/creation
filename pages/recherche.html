@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Rechercher — CREATIO</title>
+<meta name="description" content="Recherche plein texte dans les vingt-deux salles et les pages annexes du musée CREATIO, sur votre appareil et hors connexion.">
+<meta name="author" content="CREATIO">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://creatio.example.org/pages/recherche.html">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/creatio.css">
+<script src="../assets/js/creatio.js" defer></script>
+<script src="../assets/js/recherche.js" defer></script>
+<meta property="og:title" content="Rechercher">
+<meta property="og:description" content="Un musée numérique francophone : vingt-deux salles, du cosmos à la cellule, où chaque fait scientifique vérifié invite à réfléchir à la sagesse du Créateur.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://creatio.example.org/pages/recherche.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://creatio.example.org/assets/img/echelles/partage.jpg">
+<meta property="og:image:alt" content="Horizon lumineux sous un ciel étoilé.">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Rechercher",
+  "description": "Recherche plein texte dans les vingt-deux salles et les pages annexes du musée CREATIO, sur votre appareil et hors connexion.",
+  "inLanguage": "fr-FR",
+  "isAccessibleForFree": true,
+  "url": "https://creatio.example.org/pages/recherche.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CREATIO — Le Musée des Merveilles de la Création",
+    "url": "https://creatio.example.org/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "CREATIO"
+  }
+}
+</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu principal</a>
+<header class="entete">
+  <div class="enveloppe entete-interieur">
+    <a class="marque" href="../index.html">
+      <span class="goutte" aria-hidden="true"></span>
+      <span><span class="marque-nom">CREATIO</span> <span class="marque-sous">Musée des Merveilles</span></span>
+      <span class="visuellement-masque">, retour à l'accueil</span>
+    </a>
+    <nav class="navigation navigation-principale" aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#ailes">Les sept ailes</a></li>
+        <li><a href="../index.html#methode">La méthode</a></li>
+          <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+          <li><a href="../pages/recherche.html">Rechercher</a></li>
+      </ul>
+    </nav>
+    <div class="outils">
+      <button class="bouton bouton-contraste" type="button" data-contraste aria-pressed="false">Contraste renforcé</button>
+    </div>
+    <details class="nav-mobile">
+      <summary class="bouton">Menu</summary>
+      <nav class="navigation" aria-label="Navigation mobile">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../index.html#ailes">Les sept ailes</a></li>
+          <li><a href="../index.html#methode">La méthode</a></li>
+          <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+          <li><a href="../pages/recherche.html">Rechercher</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+<main id="contenu">
+  <div class="enveloppe">
+    <div class="salle-entete">
+      <p class="fil-ariane"><a href="../index.html">Accueil</a> → Rechercher</p>
+      <h1>Rechercher</h1>
+      <p class="chapo">Un mot, un animal, une constante, un savant : retrouvez en un instant la salle qui en parle.</p>
+    </div>
+    <figure class="salle-figure">
+      <img src="../assets/img/pages/annexe-recherche.jpg" alt="Dans une vaste grotte, une exploratrice à lampe frontale lève les yeux vers une voûte couverte de milliers de petites lueurs bleu-vert de vers luisants, qui se reflètent dans un lac souterrain parfaitement immobile." width="1920" height="1080">
+      <figcaption>Reconstitution numérique — grotte aux vers luisants, illustration d'ambiance.</figcaption>
+    </figure>
+    <div class="annexe-contenu">
+    <section class="section" aria-labelledby="chercher">
+  <p class="surtitre">Dans tout le musée</p>
+  <h2 id="chercher">Rechercher un mot</h2>
+  <div class="recherche" data-recherche data-index="../assets/data/recherche-index.json" data-prefixe="../">
+    <form role="search" action="recherche.html" method="get">
+      <label for="recherche-champ">Mot ou expression à rechercher</label>
+      <div class="recherche-ligne">
+        <input id="recherche-champ" name="q" type="search" autocomplete="off" spellcheck="false" aria-describedby="recherche-etat">
+        <button class="bouton" type="submit">Rechercher</button>
+      </div>
+    </form>
+    <p id="recherche-etat" class="filtre-etat" data-recherche-etat role="status">Saisissez un ou plusieurs mots, par exemple « gecko » ou « constante ».</p>
+    <ol class="recherche-resultats" data-recherche-resultats></ol>
+    <noscript><p class="note">La recherche a besoin de JavaScript. Les liens ci-dessous permettent de tout retrouver sans lui.</p></noscript>
+  </div>
+  <p class="texte-doux">La recherche porte sur le texte des vingt-deux salles, de l'accueil et des pages annexes. Elle se fait entièrement sur votre appareil, fonctionne hors connexion et n'enregistre rien.</p>
+</section>
+<section class="section" aria-labelledby="autrement">
+  <p class="surtitre">Sans moteur de recherche</p>
+  <h2 id="autrement">Autres façons de trouver</h2>
+  <ul class="liste-simple">
+    <li>Le <a href="parcours-de-visite.html">plan complet des vingt-deux salles</a>, avec trois parcours.</li>
+    <li>Le <a href="glossaire.html">glossaire</a>, pour comprendre un terme technique.</li>
+    <li>La liste des sources, filtrable par auteur, titre ou numéro de fait, dans <a href="methode-et-sources.html">Méthode et sources</a>.</li>
+    <li>Les <a href="questions-frequentes.html">questions fréquentes</a>.</li>
+  </ul>
+</section>
+    </div>
+  </div>
+</main>
+<footer class="pied">
+  <div class="enveloppe">
+    <nav class="pied-annexes" aria-label="Pages annexes">
+      <ul>
+        <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+        <li><a href="../pages/recherche.html">Rechercher</a></li>
+        <li><a href="../pages/la-frise-de-la-creation.html">La frise de la création</a></li>
+        <li><a href="../pages/parcours-de-visite.html">Parcours de visite</a></li>
+        <li><a href="../pages/questions-frequentes.html">Questions fréquentes</a></li>
+        <li><a href="../pages/glossaire.html">Glossaire</a></li>
+        <li><a href="../pages/methode-et-sources.html">Méthode et sources</a></li>
+        <li><a href="../pages/accessibilite.html">Accessibilité</a></li>
+        <li><a href="../pages/credits-et-mentions.html">Crédits et mentions</a></li>
+      </ul>
+    </nav>
+    <p>CREATIO — Le Musée des Merveilles de la Création — site francophone, sans ressource externe, sans traceur ni fichier de suivi.</p>
+    <p><a href="../pages/comment-fonctionne.html">Comment fonctionne le musée</a> · <span class="reseau" data-reseau>Disponible hors connexion après la première visite</span> · Mis à jour le <time datetime="2026-10-28">28 octobre 2026</time>.</p>
+  </div>
+</footer>
+</body>
+</html>

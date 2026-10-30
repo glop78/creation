@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Comment fonctionne le musée — CREATIO</title>
+<meta name="description" content="Les quatre replis graphiques du voyage entre les échelles, le fonctionnement hors connexion, les transcriptions et les réglages d'accessibilité du musée CREATIO.">
+<meta name="author" content="CREATIO">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://creatio.example.org/pages/comment-fonctionne.html">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/creatio.css">
+<script src="../assets/js/creatio.js" defer></script>
+
+<meta property="og:title" content="Comment fonctionne le musée">
+<meta property="og:description" content="Un musée numérique francophone : vingt-deux salles, du cosmos à la cellule, où chaque fait scientifique vérifié invite à réfléchir à la sagesse du Créateur.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://creatio.example.org/pages/comment-fonctionne.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://creatio.example.org/assets/img/echelles/partage.jpg">
+<meta property="og:image:alt" content="Horizon lumineux sous un ciel étoilé.">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Comment fonctionne le musée",
+  "description": "Les quatre replis graphiques du voyage entre les échelles, le fonctionnement hors connexion, les transcriptions et les réglages d'accessibilité du musée CREATIO.",
+  "inLanguage": "fr-FR",
+  "isAccessibleForFree": true,
+  "url": "https://creatio.example.org/pages/comment-fonctionne.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CREATIO — Le Musée des Merveilles de la Création",
+    "url": "https://creatio.example.org/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "CREATIO"
+  }
+}
+</script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu principal</a>
+<header class="entete">
+  <div class="enveloppe entete-interieur">
+    <a class="marque" href="../index.html">
+      <span class="goutte" aria-hidden="true"></span>
+      <span><span class="marque-nom">CREATIO</span> <span class="marque-sous">Musée des Merveilles</span></span>
+      <span class="visuellement-masque">, retour à l'accueil</span>
+    </a>
+    <nav class="navigation navigation-principale" aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#ailes">Les sept ailes</a></li>
+        <li><a href="../index.html#methode">La méthode</a></li>
+          <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+          <li><a href="../pages/recherche.html">Rechercher</a></li>
+      </ul>
+    </nav>
+    <div class="outils">
+      <button class="bouton bouton-contraste" type="button" data-contraste aria-pressed="false">Contraste renforcé</button>
+    </div>
+    <details class="nav-mobile">
+      <summary class="bouton">Menu</summary>
+      <nav class="navigation" aria-label="Navigation mobile">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../index.html#ailes">Les sept ailes</a></li>
+          <li><a href="../index.html#methode">La méthode</a></li>
+          <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+          <li><a href="../pages/recherche.html">Rechercher</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+<main id="contenu">
+  <div class="enveloppe">
+    <div class="salle-entete">
+      <p class="fil-ariane"><a href="../index.html">Accueil</a> → Comment fonctionne le musée</p>
+      <h1>Comment fonctionne le musée</h1>
+      <p class="chapo">Quatre modes d'affichage, la visite hors connexion, les transcriptions et les réglages d'accessibilité, expliqués en français clair.</p>
+    </div>
+    <figure class="salle-figure">
+      <img src="../assets/img/pages/annexe-fonctionnement.jpg" alt="Une jeune visiteuse, tablette en main, contemple dans une salle sombre un immense écran courbe montrant côte à côte une galaxie spirale et une cellule lumineuse, reflétées sur le sol." width="1920" height="1080">
+      <figcaption>Reconstitution numérique — visite immersive, illustration d'ambiance.</figcaption>
+    </figure>
+    <div class="annexe-contenu">
+    <section class="section" aria-labelledby="replis">
+  <p class="surtitre">Technique, en français clair</p>
+  <h2 id="replis">Quatre façons d'afficher le même voyage</h2>
+  <p>Le voyage entre les échelles utilise, selon votre appareil, l'une des quatre solutions suivantes. Elles affichent toutes les dix mêmes étapes, les mêmes faits vérifiés et les mêmes commandes. Si la plus riche échoue, la suivante prend le relais automatiquement, sans jamais interrompre la visite.</p>
+  <ol class="liste-faits">
+    <li class="fait"><div class="fait-entete"><span class="badge badge-etabli badge-discret">Premier choix</span></div><p class="fait-texte"><strong>Interface de calcul graphique de nouvelle génération</strong> — que les spécialistes appellent WebGPU (interface web de calcul graphique). Elle dessine les anneaux lumineux directement sur le processeur graphique, avec un petit programme de nuanceur (un programme de calcul des couleurs) écrit en WGSL (langage des nuanceurs de cette interface).</p></li>
+    <li class="fait"><div class="fait-entete"><span class="badge badge-etabli badge-discret">Deuxième choix</span></div><p class="fait-texte"><strong>Interface graphique de deuxième génération</strong> — appelée WebGL2 (interface web graphique, version 2). Elle produit le même effet avec le langage GLSL (langage des nuanceurs graphiques) et fonctionne sur la grande majorité des navigateurs récents.</p></li>
+    <li class="fait"><div class="fait-entete"><span class="badge badge-debattu badge-discret">Troisième choix</span></div><p class="fait-texte"><strong>Dessin procédural en deux dimensions</strong> — un canevas (une zone de dessin) calculé par le navigateur, sans accélération matérielle. Les anneaux sont tracés avec des cercles et des dégradés : l'effet est plus simple, mais toujours animé.</p></li>
+    <li class="fait"><div class="fait-entete"><span class="badge badge-reflexion badge-discret">Quatrième choix</span></div><p class="fait-texte"><strong>Image JPG seule</strong> — aucune animation, uniquement les dix photographies numériques. C'est le repli utilisé si les trois précédents sont indisponibles, ou si vous avez demandé à votre système de réduire les animations.</p></li>
+  </ol>
+  <div class="note"><h3>Un seul mot d'ordre : jamais de contenu dépendant du graphisme</h3><p>Les dix étapes, leurs textes, leurs sources et leurs boutons sont du simple texte et des images. L'animation n'est qu'un habillage : si vous la désactivez, vous ne perdez aucune information.</p></div>
+</section>
+<section class="section" aria-labelledby="commandes">
+  <p class="surtitre">Commandes</p>
+  <h2 id="commandes">Naviguer à votre rythme</h2>
+  <ul><li><strong>Boutons</strong> : « Étape précédente » et « Étape suivante » avancent d'un palier.</li><li><strong>Clavier</strong> : les flèches gauche et droite, ainsi que haut et bas, changent d'étape quand la galerie a le focus. Les touches Début et Fin vont à la première et à la dernière étape.</li><li><strong>Souris ou doigt</strong> : faites défiler la galerie horizontalement, le compteur se met à jour.</li><li><strong>Lecture automatique</strong> : enchaîne les dix étapes toutes les 3,6 secondes. Ce bouton est masqué si votre système demande la réduction des animations.</li></ul>
+</section>
+<section class="section" aria-labelledby="horsligne">
+  <p class="surtitre">Autonomie</p>
+  <h2 id="horsligne">Un musée consultable sans réseau</h2>
+  <p>Dès votre première visite, un petit programme local — un agent de service, appelé service worker (agent de mise en cache) — enregistre les pages, les images, les feuilles de style, les scripts et les pistes audio. Ensuite, coupez la connexion : l'accueil, les vingt-deux salles et l'audioguide restent disponibles. Aucune donnée n'est envoyée à un serveur, aucun traceur (aucun cookie, c'est-à-dire aucun fichier de suivi) n'est déposé, et votre choix de contraste reste stocké uniquement sur votre appareil.</p>
+</section>
+<section class="section" aria-labelledby="audio">
+  <p class="surtitre">Audioguide</p>
+  <h2 id="audio">Écouter ou lire, au choix</h2>
+  <p>Les quatre pistes de l'accueil sont enregistrées en français, en mono, à 128 kilobits par seconde et 44,1 kilohertz. Chacune dure entre une minute et une minute trente. Leur transcription intégrale est publiée juste sous le lecteur, dans un volet dépliable : vous pouvez donc tout lire sans écouter, ce qui est indispensable pour les personnes sourdes ou malentendantes comme pour celles qui préfèrent l'écrit.</p>
+</section>
+<section class="section" aria-labelledby="access">
+  <p class="surtitre">Accessibilité</p>
+  <h2 id="access">Les réglages à votre disposition</h2>
+  <ul><li><strong>Contraste renforcé</strong> : un bouton en haut de chaque page augmente le contraste des textes et des bordures. Votre choix est mémorisé.</li><li><strong>Mouvement réduit</strong> : si votre système le demande, les animations sont figées et la lecture automatique est masquée.</li><li><strong>Navigation au clavier</strong> : un lien d'évitement mène directement au contenu, chaque élément interactif reçoit un contour visible au focus, et les cibles tactiles mesurent au moins 24 pixels.</li><li><strong>Images</strong> : chacune porte un texte alternatif et une légende précisant qu'il s'agit d'une reconstitution numérique, d'une visualisation scientifique ou d'une photographie authentique.</li></ul>
+</section>
+    </div>
+  </div>
+</main>
+<footer class="pied">
+  <div class="enveloppe">
+    <nav class="pied-annexes" aria-label="Pages annexes">
+      <ul>
+        <li><a href="../pages/comment-fonctionne.html">Fonctionnement</a></li>
+        <li><a href="../pages/recherche.html">Rechercher</a></li>
+        <li><a href="../pages/la-frise-de-la-creation.html">La frise de la création</a></li>
+        <li><a href="../pages/parcours-de-visite.html">Parcours de visite</a></li>
+        <li><a href="../pages/questions-frequentes.html">Questions fréquentes</a></li>
+        <li><a href="../pages/glossaire.html">Glossaire</a></li>
+        <li><a href="../pages/methode-et-sources.html">Méthode et sources</a></li>
+        <li><a href="../pages/accessibilite.html">Accessibilité</a></li>
+        <li><a href="../pages/credits-et-mentions.html">Crédits et mentions</a></li>
+      </ul>
+    </nav>
+    <p>CREATIO — Le Musée des Merveilles de la Création — site francophone, sans ressource externe, sans traceur ni fichier de suivi.</p>
+    <p><a href="../pages/comment-fonctionne.html">Comment fonctionne le musée</a> · <span class="reseau" data-reseau>Disponible hors connexion après la première visite</span> · Mis à jour le <time datetime="2026-10-28">28 octobre 2026</time>.</p>
+  </div>
+</footer>
+</body>
+</html>

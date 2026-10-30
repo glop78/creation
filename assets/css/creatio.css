@@ -1,0 +1,1491 @@
+/* ==========================================================================
+   CREATIO — système de design E03
+   Feuille unique, locale, sans import ni police distante.
+   Palette : nuit / or / nacre. Accessibilité : WCAG 2.2 AA.
+   ========================================================================== */
+
+:root {
+  /* Couleurs */
+  --nuit: #05070D;
+  --nuit-2: #0A1020;
+  --nuit-3: #121B32;
+  --nebuleuse: #1B2A5A;
+  --or: #E6C46A;
+  --or-pale: #F6E4B0;
+  --or-sombre: #8A6A1F;
+  --nacre: #F4F1EA;
+  --nacre-2: #D7DBE6;
+  --gris: #A9B2C6;
+  --lapis: #8FA3F0;
+  --ambre: #F0B45C;
+  --jade: #83D6B4;
+
+  /* Typographie — polices système uniquement (aucun appel réseau) */
+  --police-titres: Georgia, "Times New Roman", "Noto Serif", serif;
+  --police-texte: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --police-mono: "Cascadia Mono", "Consolas", "Liberation Mono", monospace;
+
+  /* Rythme */
+  --pas: 0.5rem;
+  --rayon: 0.8rem;
+  --rayon-grand: 1.4rem;
+  --largeur: 78rem;
+  --ligne: 1.75;
+
+  --ombre: 0 1.2rem 3.6rem rgba(0, 0, 0, .55);
+  --liseret: 1px solid rgba(230, 196, 106, .26);
+  --transition: 220ms ease;
+}
+
+/* --------------------------------------------------------------------------
+   Réinitialisation et base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 90% 55% at 50% -10%, rgba(27, 42, 90, .55), transparent 70%),
+    radial-gradient(ellipse 55% 40% at 88% 42%, rgba(70, 52, 150, .16), transparent 75%),
+    radial-gradient(ellipse 60% 50% at 8% 82%, rgba(14, 94, 126, .14), transparent 75%),
+    var(--nuit);
+  color: var(--nacre);
+  font-family: var(--police-texte);
+  font-size: clamp(1rem, .96rem + .22vw, 1.09rem);
+  line-height: var(--ligne);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, canvas, video { display: block; max-width: 100%; height: auto; }
+
+h1, h2, h3, h4 {
+  font-family: var(--police-titres);
+  font-weight: 400;
+  line-height: 1.2;
+  text-wrap: balance;
+  margin: 0 0 .7em;
+  color: var(--or-pale);
+}
+
+h1 { font-size: clamp(2.2rem, 1.3rem + 4.4vw, 4.4rem); letter-spacing: -.01em; }
+h2 { font-size: clamp(1.65rem, 1.2rem + 1.8vw, 2.6rem); }
+h3 { font-size: clamp(1.2rem, 1.05rem + .7vw, 1.5rem); }
+p { margin: 0 0 1.1em; max-width: 68ch; }
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: .45em; }
+
+a { color: var(--or); text-underline-offset: .22em; text-decoration-thickness: 1px; }
+a:hover { color: var(--or-pale); }
+
+/* WCAG 2.2 AA — cible minimale 24 × 24 px pour les liens en ligne de texte.
+   Les liens de navigation, boutons et cartes ont déjà des zones plus larges. */
+.fil-ariane a, .carte-pied a, .pied a, .px-aide a, .fait-sources, .px-source {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+:where(a, button, input, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--or);
+  outline-offset: 3px;
+  border-radius: .25rem;
+}
+
+button { font: inherit; cursor: pointer; }
+
+::selection { background: var(--or-sombre); color: #fff; }
+
+.enveloppe { width: min(var(--largeur), 92vw); margin-inline: auto; }
+.section { padding-block: clamp(3rem, 7vw, 6rem); }
+.surtitre {
+  font-size: .78rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: .9rem;
+}
+.chapo { font-size: clamp(1.06rem, 1rem + .4vw, 1.28rem); color: var(--nacre-2); max-width: 60ch; }
+.texte-doux { color: var(--gris); }
+.visuellement-masque {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Liens d'évitement et en-tête
+   -------------------------------------------------------------------------- */
+.evitement {
+  position: fixed;
+  top: -8rem; left: 1rem;
+  z-index: 100;
+  padding: .8rem 1.2rem;
+  background: var(--or);
+  color: var(--nuit);
+  font-weight: 700;
+  border-radius: 0 0 var(--rayon) var(--rayon);
+  transition: top var(--transition);
+}
+.evitement:focus { top: 0; }
+
+.entete {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(5, 7, 13, .82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: var(--liseret);
+}
+.entete-interieur {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.2rem; min-height: 4.4rem;
+}
+.marque { display: flex; align-items: center; gap: .85rem; text-decoration: none; color: inherit; }
+.marque:hover { color: inherit; }
+.goutte {
+  width: 2.1rem; height: 2.1rem; flex: none;
+  border-radius: 50% 50% 50% 14%;
+  transform: rotate(-35deg);
+  background: radial-gradient(circle at 35% 30%, #FFF6D8, var(--or) 45%, var(--or-sombre) 100%);
+  box-shadow: 0 0 1.8rem rgba(230, 196, 106, .38);
+}
+.marque-nom {
+  font-family: var(--police-titres);
+  font-size: clamp(1.15rem, 1rem + .7vw, 1.55rem);
+  letter-spacing: .2em;
+  margin: 0;
+  color: var(--or);
+}
+.marque-sous {
+  font-size: .68rem; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--gris); display: block; margin-top: -.15rem;
+}
+
+.navigation ul { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; list-style: none; margin: 0; padding: 0; }
+.navigation a {
+  display: inline-block; padding: .55rem .2rem;
+  color: var(--nacre-2); text-decoration: none; font-size: .92rem;
+  border-bottom: 2px solid transparent;
+}
+.navigation a:hover, .navigation a[aria-current="page"] { color: var(--or); border-bottom-color: var(--or); }
+
+.outils { display: flex; align-items: center; gap: .55rem; }
+.bouton {
+  min-height: 2.75rem;
+  padding: .55rem 1rem;
+  background: rgba(230, 196, 106, .09);
+  color: var(--nacre);
+  border: var(--liseret);
+  border-radius: 999px;
+  font-size: .88rem;
+  transition: background var(--transition), color var(--transition);
+}
+.bouton:hover { background: rgba(230, 196, 106, .2); color: var(--or-pale); }
+.bouton-plein {
+  display: inline-block; min-height: 3rem;
+  padding: .75rem 1.6rem;
+  background: var(--or); color: var(--nuit);
+  border: 1px solid var(--or); border-radius: 999px;
+  font-weight: 700; text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.bouton-plein:hover {
+  color: var(--nuit); transform: translateY(-2px);
+  box-shadow: 0 .8rem 2rem rgba(230, 196, 106, .28);
+}
+.bouton-secondaire {
+  display: inline-block; min-height: 3rem;
+  padding: .7rem 1.4rem;
+  border: var(--liseret); border-radius: 999px;
+  color: var(--nacre); text-decoration: none;
+}
+.bouton-secondaire:hover { color: var(--or); border-color: var(--or); }
+
+.nav-mobile { display: none; }
+.nav-mobile summary { list-style: none; cursor: pointer; }
+.nav-mobile summary::-webkit-details-marker { display: none; }
+.nav-mobile[open] .navigation {
+  position: absolute; left: 0; right: 0; top: 100%;
+  background: var(--nuit-2); border-bottom: var(--liseret);
+  padding: 1rem 4vw 1.4rem;
+}
+.nav-mobile[open] .navigation ul { flex-direction: column; }
+
+/* --------------------------------------------------------------------------
+   Héros de l'accueil
+   -------------------------------------------------------------------------- */
+.heros { position: relative; isolation: isolate; overflow: hidden; }
+.heros-figure { margin: 0; position: absolute; inset: 0; z-index: -2; }
+.heros-figure img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+.heros-voile {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(5, 7, 13, .52) 0%, rgba(5, 7, 13, .38) 35%, rgba(5, 7, 13, .93) 100%),
+    radial-gradient(ellipse at 25% 40%, transparent, rgba(5, 7, 13, .6));
+}
+.heros-contenu { padding-block: clamp(5rem, 13vw, 11rem) clamp(4rem, 8vw, 7rem); }
+.heros h1 { max-width: 20ch; text-shadow: 0 .3rem 2rem rgba(0, 0, 0, .6); }
+.heros-slogan {
+  font-family: var(--police-titres); font-style: italic;
+  font-size: clamp(1.1rem, 1rem + .8vw, 1.55rem);
+  color: var(--or-pale); max-width: 44ch;
+}
+.heros-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+.heros-verset {
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding: 1.2rem 1.5rem;
+  max-width: 52rem;
+  border-left: 3px solid var(--or);
+  background: rgba(5, 7, 13, .55);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+}
+.heros-verset p { margin: 0; font-family: var(--police-titres); font-size: 1.06rem; }
+.heros-verset .reference { display: block; margin-top: .5rem; font-size: .82rem; color: var(--or); letter-spacing: .08em; }
+.heros-verset .version { display: block; margin-top: .2rem; font-size: .76rem; color: var(--gris); }
+
+/* --------------------------------------------------------------------------
+   Badges des trois niveaux
+   -------------------------------------------------------------------------- */
+.badges { display: flex; flex-wrap: wrap; gap: .65rem; list-style: none; margin: 0; padding: 0; }
+.badge {
+  display: inline-flex; align-items: center; gap: .45rem;
+  padding: .4rem .9rem;
+  border: 1px solid currentColor; border-radius: 999px;
+  font-size: .8rem; letter-spacing: .03em;
+  background: rgba(5, 7, 13, .5);
+}
+.badge::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+.badge-etabli { color: var(--jade); }
+.badge-debattu { color: var(--ambre); }
+.badge-reflexion { color: var(--lapis); }
+.badge-discret { font-size: .72rem; padding: .25rem .7rem; }
+
+/* --------------------------------------------------------------------------
+   Cartes des ailes
+   -------------------------------------------------------------------------- */
+.grille-ailes {
+  display: grid; gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+.carte {
+  display: flex; flex-direction: column;
+  background: linear-gradient(165deg, rgba(18, 27, 50, .88), rgba(5, 7, 13, .9));
+  border: var(--liseret); border-radius: var(--rayon-grand);
+  overflow: hidden; box-shadow: var(--ombre);
+  transition: transform var(--transition), border-color var(--transition);
+}
+.carte:hover { transform: translateY(-4px); border-color: var(--or); }
+.carte figure { margin: 0; position: relative; }
+.carte img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.carte figcaption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: .35rem .8rem;
+  font-size: .69rem; letter-spacing: .06em;
+  color: var(--nacre-2);
+  background: linear-gradient(0deg, rgba(5, 7, 13, .92), transparent);
+}
+.carte-corps { padding: 1.3rem 1.4rem 1.6rem; display: flex; flex-direction: column; gap: .6rem; flex: 1; }
+.carte-numero { font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--or); margin: 0; }
+.carte h3 { margin: 0; }
+.carte p { margin: 0; color: var(--nacre-2); font-size: .95rem; }
+.carte-pied { margin-top: auto; padding-top: .8rem; font-size: .82rem; color: var(--gris); }
+.carte-pied a { text-decoration: none; font-weight: 600; }
+.carte-pied a::after { content: " →"; }
+
+/* --------------------------------------------------------------------------
+   Puissances de dix — galerie statique (repli image) et contrôles
+   -------------------------------------------------------------------------- */
+.px-cadre {
+  border: var(--liseret); border-radius: var(--rayon-grand);
+  background: rgba(10, 16, 32, .72);
+  overflow: hidden;
+}
+
+/* Scène animée des paliers — quatre replis visuels, une seule mise en page. */
+.px-scene {
+  position: relative;
+  isolation: isolate;
+  height: clamp(15rem, 42vw, 27rem);
+  overflow: hidden;
+  background: #05070D;
+  --px-zoom: 1;
+}
+.px-scene > canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.px-scene > .px-image {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transform: scale(var(--px-zoom));
+  transition: transform 700ms ease, opacity 180ms ease;
+  opacity: 1;
+  z-index: 0;
+}
+.px-scene > .px-image.px-image-sortante { opacity: .25; }
+.px-scene-voile {
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(5, 7, 13, .10) 0%, rgba(5, 7, 13, .10) 45%, rgba(5, 7, 13, .88) 100%),
+    radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(5, 7, 13, .55) 100%);
+  pointer-events: none;
+}
+.px-scene-legende {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem 1.1rem;
+  padding: 1rem clamp(1rem, 3vw, 2rem);
+  text-shadow: 0 .15rem .8rem rgba(0, 0, 0, .85);
+}
+.px-scene-legende strong {
+  font-family: var(--police-titres); font-weight: 400;
+  font-size: clamp(1.2rem, 1rem + 1vw, 1.9rem); color: var(--nacre);
+}
+.px-scene-legende .px-source { font-size: .78rem; color: var(--nacre-2); }
+.px-moteur {
+  margin: 0; padding: .55rem 1.2rem;
+  font-size: .76rem; color: var(--gris);
+  border-bottom: var(--liseret);
+  background: rgba(5, 7, 13, .5);
+}
+.px-piste {
+  display: flex; gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--or-sombre) transparent;
+  padding: 1.2rem;
+}
+.px-piste > li {
+  scroll-snap-align: center;
+  flex: 0 0 min(84vw, 30rem);
+  list-style: none; margin: 0;
+  background: var(--nuit-2);
+  border: 1px solid rgba(230, 196, 106, .18);
+  border-radius: var(--rayon);
+  overflow: hidden;
+}
+.px-piste > li:focus-visible { outline-offset: -3px; }
+.px-piste figure { margin: 0; position: relative; }
+.px-piste img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.px-piste figcaption {
+  position: absolute; inset: auto 0 0 0;
+  padding: .35rem .8rem;
+  font-size: .69rem; color: var(--nacre-2);
+  background: linear-gradient(0deg, rgba(5, 7, 13, .94), transparent);
+}
+.px-corps { padding: 1rem 1.15rem 1.3rem; }
+.px-echelle {
+  display: inline-block; margin-bottom: .5rem;
+  font-family: var(--police-mono); font-size: .84rem;
+  color: var(--or); letter-spacing: .05em;
+}
+.px-corps h3 { font-size: 1.18rem; margin-bottom: .5rem; }
+.px-corps p { font-size: .92rem; color: var(--nacre-2); margin-bottom: .6rem; }
+.px-source { font-size: .76rem !important; color: var(--gris) !important; }
+.px-controles {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .8rem;
+  padding: 1rem 1.2rem; border-top: var(--liseret);
+}
+.px-controles .bouton { min-width: 9.5rem; }
+.px-compteur { font-family: var(--police-mono); font-size: .88rem; color: var(--or); margin: 0; }
+.px-aide { font-size: .82rem; color: var(--gris); margin: 0 0 .8rem; }
+
+/* --- Audioguide (E04) ---------------------------------------------------- */
+.grille-audio {
+  display: grid; gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+}
+.audio-carte {
+  padding: 1.3rem 1.4rem 1.5rem;
+  border: var(--liseret); border-radius: var(--rayon-grand);
+  background: linear-gradient(165deg, rgba(18, 27, 50, .85), rgba(5, 7, 13, .9));
+}
+.audio-carte h3 { margin: 0 0 .3rem; font-size: 1.22rem; }
+.audio-carte .audio-duree { font-size: .78rem; color: var(--gris); margin: 0 0 .9rem; }
+.audio-carte audio {
+  display: block; width: 100%;
+  min-height: 3rem; margin-bottom: .9rem;
+  accent-color: var(--or);
+}
+.audio-carte details {
+  border-top: var(--liseret); padding-top: .8rem;
+}
+.audio-carte summary {
+  cursor: pointer; color: var(--or); font-size: .88rem;
+  min-height: 24px; display: flex; align-items: center;
+}
+.transcription {
+  margin-top: .8rem; padding: .9rem 1rem;
+  max-height: 17rem; overflow-y: auto;
+  background: rgba(5, 7, 13, .6);
+  border-radius: var(--rayon);
+  font-size: .88rem; color: var(--nacre-2); line-height: 1.65;
+}
+.transcription p { margin: 0 0 .8em; }
+.transcription p:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------------------
+   Chiffres, progression, notes
+   -------------------------------------------------------------------------- */
+.chiffres {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  list-style: none; margin: 2rem 0 0; padding: 0;
+}
+.chiffres li {
+  padding: 1.2rem; text-align: center;
+  border: var(--liseret); border-radius: var(--rayon);
+  background: rgba(18, 27, 50, .5);
+}
+.chiffres strong { display: block; font-family: var(--police-titres); font-size: 2.1rem; color: var(--or); line-height: 1; }
+.chiffres span { display: block; margin-top: .4rem; font-size: .82rem; color: var(--gris); }
+
+.progression { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; font-size: .86rem; margin-top: 2rem; }
+.barre { flex: 1 1 12rem; height: .6rem; background: rgba(230, 196, 106, .15); border-radius: 99px; overflow: hidden; }
+.barre i { display: block; height: 100%; width: 20%; border-radius: 99px; background: linear-gradient(90deg, var(--or-sombre), var(--or)); }
+
+.note {
+  padding: 1.2rem 1.4rem;
+  border: 1px solid rgba(143, 163, 240, .35);
+  border-radius: var(--rayon);
+  background: rgba(27, 42, 90, .28);
+}
+.note h3 { color: var(--lapis); font-size: 1.12rem; }
+
+/* --------------------------------------------------------------------------
+   Pages de salle
+   -------------------------------------------------------------------------- */
+.salle-entete { padding-block: clamp(2.5rem, 6vw, 4.5rem) 1rem; }
+.fil-ariane { font-size: .84rem; color: var(--gris); margin-bottom: 1.2rem; }
+.fil-ariane a { color: var(--or); }
+.salle-numero { font-size: .78rem; letter-spacing: .24em; text-transform: uppercase; color: var(--or); }
+.salle-intro { font-size: clamp(1.05rem, 1rem + .4vw, 1.25rem); color: var(--nacre-2); max-width: 62ch; }
+.salle-figure { margin: 0 0 2rem; border-radius: var(--rayon-grand); overflow: hidden; border: var(--liseret); }
+.salle-figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.salle-figure figcaption { padding: .6rem 1rem; font-size: .76rem; color: var(--gris); background: var(--nuit-2); }
+
+.liste-faits { display: grid; gap: 1rem; list-style: none; margin: 1.5rem 0 2rem; padding: 0; }
+.fait {
+  padding: 1.2rem 1.35rem;
+  border: var(--liseret); border-left: 3px solid var(--jade);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  background: rgba(10, 16, 32, .65);
+}
+.fait.debattu { border-left-color: var(--ambre); }
+.fait.reflexion { border-left-color: var(--lapis); }
+.fait-entete { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-bottom: .55rem; }
+.fait-id { font-family: var(--police-mono); font-size: .74rem; color: var(--gris); }
+.fait-texte { margin: 0; }
+.fait-nuance { margin: .6rem 0 0; font-size: .86rem; color: var(--gris); }
+.fait-sources { margin: .6rem 0 0; font-size: .78rem; color: var(--or); }
+
+.reflexion {
+  margin-top: 2.5rem; padding: 1.6rem;
+  border-left: 3px solid var(--lapis);
+  background: rgba(27, 42, 90, .25);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+}
+.reflexion h2 { color: var(--lapis); font-size: 1.5rem; }
+.salle-suivante { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+
+/* --------------------------------------------------------------------------
+   Pied de page et état du réseau
+   -------------------------------------------------------------------------- */
+.pied {
+  margin-top: 3rem; padding-block: 2.6rem 3.2rem;
+  border-top: var(--liseret);
+  background: rgba(5, 7, 13, .72);
+  color: var(--gris); font-size: .86rem;
+}
+.pied p { max-width: 72ch; }
+.pied a { color: var(--or); }
+.reseau { display: inline-flex; align-items: center; gap: .45rem; }
+.reseau::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--jade); }
+.reseau.hors-ligne::before { background: var(--ambre); }
+
+/* --------------------------------------------------------------------------
+   Contraste renforcé (bascule utilisateur)
+   -------------------------------------------------------------------------- */
+.contraste-renforce {
+  --nacre: #FFFFFF;
+  --nacre-2: #F0F2FA;
+  --gris: #D2D8E8;
+  --or: #FFE08A;
+  --lapis: #B7C6FF;
+  --ambre: #FFC978;
+  --jade: #A6F0D2;
+  --liseret: 2px solid rgba(255, 224, 138, .8);
+}
+.contraste-renforce body { background: #000208; }
+.contraste-renforce .carte,
+.contraste-renforce .chiffres li,
+.contraste-renforce .fait { background: #050B18; }
+.contraste-renforce .heros-voile { background: linear-gradient(180deg, rgba(0,2,8,.8), rgba(0,2,8,.95)); }
+
+/* --------------------------------------------------------------------------
+   E05 — salles enrichies : galerie, citations, objections, interactions phares
+   -------------------------------------------------------------------------- */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.1rem;
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+}
+.galerie-item { margin: 0; }
+.galerie-item figure {
+  margin: 0;
+  border: var(--liseret);
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: var(--nuit-2);
+}
+.galerie-item img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.galerie-item figcaption {
+  padding: .75rem .9rem;
+  font-size: .86rem;
+  line-height: 1.5;
+  color: var(--gris);
+}
+
+/* Paroles de chercheurs, toujours avec leur texte original et leur contexte */
+.citation {
+  margin: 2.2rem 0;
+  padding: clamp(1.2rem, 1rem + 1.5vw, 2.2rem);
+  border: var(--liseret);
+  border-left: 4px solid var(--or);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  background: linear-gradient(135deg, rgba(27, 42, 90, .42), rgba(5, 7, 13, .4));
+}
+.citation .surtitre { margin-bottom: .8rem; }
+.citation blockquote { margin: 0; }
+.citation-traduction {
+  font-family: var(--police-titres);
+  font-size: clamp(1.15rem, 1rem + .8vw, 1.55rem);
+  line-height: 1.5;
+  color: var(--or-pale);
+  max-width: 46ch;
+}
+.citation-original { margin-top: 1rem; }
+.citation-original > summary,
+.objection > summary {
+  cursor: pointer;
+  padding: .55rem .2rem;
+  min-height: 24px;
+  color: var(--or);
+  font-weight: 600;
+  list-style-position: inside;
+}
+.citation-original > summary:hover,
+.objection > summary:hover,
+.citation-original[open] > summary,
+.objection[open] > summary { color: var(--or-pale); }
+.citation-original p[lang="en"] {
+  font-family: var(--police-titres);
+  font-style: italic;
+  color: var(--nacre-2);
+  padding-left: 1rem;
+  border-left: 1px solid var(--or-sombre);
+}
+.citation-ref { font-size: .85rem; color: var(--gris); }
+.citation-garde {
+  margin: 1.2rem 0 0;
+  padding: .85rem 1rem;
+  font-size: .9rem;
+  border-radius: var(--rayon);
+  background: rgba(240, 180, 92, .09);
+  border: 1px solid rgba(240, 180, 92, .3);
+  color: var(--nacre-2);
+}
+
+/* Objections publiées et réponses honnêtes */
+.objection {
+  margin: .7rem 0;
+  padding: .2rem 1rem .4rem;
+  border: var(--liseret);
+  border-radius: var(--rayon);
+  background: rgba(10, 16, 32, .6);
+}
+.objection[open] { background: rgba(18, 27, 50, .8); }
+.objection > summary { font-family: var(--police-titres); font-size: 1.1rem; font-weight: 400; }
+.objection p { color: var(--nacre-2); }
+
+/* Frise cosmique et simulateur des constantes */
+.frise, .constantes {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.frise-visuel, .constantes-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.frise-visuel img, .constantes-visuel img,
+.frise-visuel canvas, .constantes-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.frise-visuel canvas, .constantes-visuel canvas { pointer-events: none; }
+.frise-visuel img[data-frise-image],
+.constantes-visuel img[data-constantes-image] { transition: opacity 300ms ease; }
+.frise-moteur, .constantes-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  letter-spacing: .02em;
+  color: var(--gris);
+}
+.frise-controles, .constantes-curseurs { margin-top: 1.1rem; }
+.frise-controles label, .curseur-ligne label {
+  display: block;
+  font-weight: 600;
+  color: var(--or-pale);
+  margin-bottom: .35rem;
+}
+.frise-controles input[type="range"], .curseur-ligne input[type="range"] {
+  width: 100%;
+  min-height: 24px;
+  accent-color: var(--or);
+  cursor: pointer;
+}
+.frise-temps {
+  font-family: var(--police-mono);
+  font-size: clamp(1.05rem, .9rem + 1vw, 1.6rem);
+  color: var(--or);
+  margin: .5rem 0 .8rem;
+}
+.frise-legende, .constantes-resultat {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.note-frise { font-size: .88rem; color: var(--gris); font-style: italic; }
+.curseur-ligne { margin-bottom: 1rem; }
+.curseur-ligne output {
+  display: inline-block;
+  margin-top: .25rem;
+  font-family: var(--police-mono);
+  font-size: .88rem;
+  color: var(--lapis);
+}
+.audio-duree { font-size: .85rem; color: var(--gris); margin: -.4rem 0 .8rem; }
+
+/* --------------------------------------------------------------------------
+   E06 — atelier de symétrie (salle 03) et ciel profond (salle 04)
+   -------------------------------------------------------------------------- */
+.symetries, .ciel {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.symetries-visuel, .ciel-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.symetries-visuel img, .ciel-visuel img,
+.symetries-visuel canvas, .ciel-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.symetries-visuel canvas, .ciel-visuel canvas { pointer-events: none; }
+.symetries-moteur, .ciel-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.symetries-controles, .ciel-controles { margin-top: 1.1rem; }
+.symetries-legende, .ciel-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.ciel-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.ciel-boutons .bouton { flex: 1 1 10rem; }
+.symetries-controles select {
+  min-height: 44px;
+  padding: .5rem .8rem;
+  border: 1px solid rgba(230, 196, 106, .4);
+  border-radius: var(--rayon);
+  background: var(--nuit-2);
+  color: var(--nacre);
+  font-family: var(--police-texte);
+  font-size: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   E07 — système Terre-Lune (salle 05) et curseur d'atmosphère (salle 06)
+   -------------------------------------------------------------------------- */
+.lune, .atmosphere {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.lune-visuel, .atmosphere-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.lune-visuel img, .atmosphere-visuel img,
+.lune-visuel canvas, .atmosphere-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lune-visuel canvas, .atmosphere-visuel canvas { pointer-events: none; }
+.lune-moteur, .atmosphere-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.lune-controles, .atmosphere-controles { margin-top: 1.1rem; }
+.lune-legende, .atmosphere-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.lune-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.lune-boutons .bouton { flex: 1 1 12rem; }
+.atmosphere-controles > .bouton { margin-top: .4rem; }
+@media (max-width: 40rem) {
+  .lune-boutons .bouton { flex: 1 1 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   E08 — lac virtuel (salle 07) et loupe sur le sol (salle 08)
+   -------------------------------------------------------------------------- */
+.lac, .sol {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.lac-visuel, .sol-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.lac-visuel img, .sol-visuel img,
+.lac-visuel canvas, .sol-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lac-visuel canvas, .sol-visuel canvas { pointer-events: none; }
+.lac-moteur, .sol-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.lac-controles, .sol-controles { margin-top: 1.1rem; }
+.lac-legende, .sol-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.lac-boutons, .sol-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.lac-boutons .bouton, .sol-boutons .bouton { flex: 1 1 10rem; }
+.lac-controles > .bouton { margin-top: .4rem; }
+@media (max-width: 40rem) {
+  .sol-boutons .bouton { flex: 1 1 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   E09 — moteur moléculaire (salle 09) et atelier de l'information (salle 10)
+   -------------------------------------------------------------------------- */
+.atp, .code {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.atp-visuel, .code-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.atp-visuel img, .code-visuel img,
+.atp-visuel canvas, .code-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.atp-visuel canvas, .code-visuel canvas { pointer-events: none; }
+.atp-moteur, .code-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.atp-controles, .code-controles { margin-top: 1.1rem; }
+.atp-legende, .code-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.atp-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.atp-boutons .bouton { flex: 1 1 12rem; }
+.code-controles > .bouton { margin-top: .4rem; }
+@media (max-width: 40rem) {
+  .atp-boutons .bouton { flex: 1 1 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   E10 — génome minimal (salle 11) et chronomètre de cohérence (salle 12)
+   -------------------------------------------------------------------------- */
+.genome, .coherence {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.genome-visuel, .coherence-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.genome-visuel img, .coherence-visuel img,
+.genome-visuel canvas, .coherence-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.genome-visuel canvas, .coherence-visuel canvas { pointer-events: none; }
+.genome-moteur, .coherence-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.genome-controles, .coherence-controles { margin-top: 1.1rem; }
+.genome-legende, .coherence-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.genome-boutons, .coherence-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.genome-boutons .bouton { flex: 1 1 12rem; }
+.coherence-ligne label { flex: 1 1 100%; }
+.coherence-ligne select {
+  min-height: 44px;
+  padding: .5rem .8rem;
+  border: 1px solid rgba(230, 196, 106, .4);
+  border-radius: var(--rayon);
+  background: var(--nuit-2);
+  color: var(--nacre);
+  font-family: var(--police-texte);
+  font-size: 1rem;
+}
+.coherence-ligne .bouton { flex: 0 1 auto; }
+@media (max-width: 40rem) {
+  .genome-boutons .bouton { flex: 1 1 100%; }
+  .coherence-ligne select, .coherence-ligne .bouton { flex: 1 1 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   E11 — adhérence du gecko (salle 13) et carte de migration (salle 14)
+   -------------------------------------------------------------------------- */
+.soies, .migration {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.soies-visuel, .migration-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.soies-visuel img, .migration-visuel img,
+.soies-visuel canvas, .migration-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.soies-visuel canvas, .migration-visuel canvas { pointer-events: none; }
+.soies-moteur, .migration-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.soies-controles, .migration-controles { margin-top: 1.1rem; }
+.soies-legende, .migration-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.soies-boutons, .migration-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.soies-boutons .bouton, .migration-boutons .bouton { flex: 1 1 12rem; }
+@media (max-width: 40rem) {
+  .soies-boutons .bouton, .migration-boutons .bouton { flex: 1 1 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   E12 — boussole invisible (salle 15) et nuée interactive (salle 16)
+   -------------------------------------------------------------------------- */
+.boussole, .nuee {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.boussole-visuel, .nuee-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.boussole-visuel img, .nuee-visuel img,
+.boussole-visuel canvas, .nuee-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.boussole-visuel canvas, .nuee-visuel canvas { pointer-events: none; }
+.boussole-moteur, .nuee-moteur {
+  margin: .7rem 0 0;
+  font-size: .82rem;
+  color: var(--gris);
+}
+.boussole-controles, .nuee-controles { margin-top: 1.1rem; }
+.boussole-legende, .nuee-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.boussole-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .4rem;
+}
+.boussole-boutons .bouton { flex: 1 1 12rem; }
+.nuee-controles .curseur-ligne { margin-top: .5rem; }
+.nuee-controles > output { display: block; margin-top: .7rem; font-weight: 600; }
+.nuee-controles > .bouton { margin-top: .6rem; }
+@media (max-width: 40rem) {
+  .boussole-boutons .bouton { flex: 1 1 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   E13 — laboratoire des spins (salle 17)
+   -------------------------------------------------------------------------- */
+.spins {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.spins-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.spins-visuel img, .spins-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.spins-visuel canvas { pointer-events: none; }
+.spins-moteur { margin: .7rem 0 0; font-size: .82rem; color: var(--gris); }
+.spins-controles { margin-top: 1.1rem; }
+.spins-controles .curseur-ligne { margin-top: .5rem; }
+.spins-controles > output { display: block; margin-top: .7rem; font-weight: 600; }
+.spins-boutons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .6rem; }
+.spins-boutons .bouton { flex: 1 1 12rem; }
+.spins-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+@media (max-width: 40rem) {
+  .spins-boutons .bouton { flex: 1 1 100%; }
+  .spins-legende { padding: .75rem .85rem; }
+}
+
+/* --------------------------------------------------------------------------
+   E14 — horloge du corps (salle 18) et comparateur de connectomes (salle 19)
+   -------------------------------------------------------------------------- */
+.horloge, .connectomes {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.horloge-visuel, .connectomes-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.horloge-visuel img, .horloge-visuel canvas,
+.connectomes-visuel img, .connectomes-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.horloge-visuel canvas, .connectomes-visuel canvas { pointer-events: none; }
+.horloge-moteur, .connectomes-moteur { margin: .7rem 0 0; font-size: .82rem; color: var(--gris); }
+.horloge-controles, .connectomes-controles { margin-top: 1.1rem; }
+.horloge-controles .curseur-ligne, .connectomes-controles .curseur-ligne { margin-top: .5rem; }
+.horloge-controles > output, .connectomes-controles > output { display: block; margin-top: .7rem; font-weight: 600; }
+.horloge-boutons, .connectomes-boutons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .6rem; }
+.horloge-boutons .bouton, .connectomes-boutons .bouton { flex: 1 1 12rem; }
+.connectomes-boutons .bouton[aria-pressed="true"] {
+  outline: 2px solid var(--jade);
+  outline-offset: 2px;
+}
+.horloge-legende, .connectomes-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+@media (max-width: 40rem) {
+  .horloge-boutons .bouton, .connectomes-boutons .bouton { flex: 1 1 100%; }
+  .horloge-legende, .connectomes-legende { padding: .75rem .85rem; }
+}
+
+/* --------------------------------------------------------------------------
+   Adaptation aux préférences et aux petits écrans
+   -------------------------------------------------------------------------- */
+@media (max-width: 62rem) {
+  .navigation-principale { display: none; }
+  .nav-mobile { display: block; position: relative; }
+  .outils .bouton-contraste { padding: .5rem .75rem; font-size: .8rem; }
+}
+
+@media (max-width: 40rem) {
+  .entete-interieur { min-height: 4rem; gap: .6rem; }
+  .marque-sous { display: none; }
+  .heros-actions { flex-direction: column; align-items: flex-start; }
+  .px-piste > li { flex-basis: 88vw; }
+  .px-controles .bouton { flex: 1 1 9rem; }
+  .galerie { grid-template-columns: 1fr; }
+  .citation { padding: 1rem; }
+  .citation-garde, .frise-legende, .constantes-resultat,
+  .symetries-legende, .ciel-legende,
+  .lune-legende, .atmosphere-legende,
+  .lac-legende, .sol-legende,
+  .atp-legende, .code-legende,
+  .genome-legende, .coherence-legende,
+  .soies-legende, .migration-legende,
+  .boussole-legende, .nuee-legende { padding: .75rem .85rem; }
+  .ciel-boutons .bouton { flex: 1 1 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .carte:hover, .bouton-plein:hover { transform: none; }
+}
+
+@media (prefers-contrast: more) {
+  :root { --liseret: 2px solid var(--or); }
+  .carte, .fait, .chiffres li { border-width: 2px; }
+}
+
+@media (forced-colors: active) {
+  .carte, .fait, .chiffres li, .px-piste > li { border: 1px solid CanvasText; }
+  .badge { border: 1px solid CanvasText; }
+  .goutte { forced-color-adjust: none; }
+}
+
+@media print {
+  .entete, .outils, .px-controles, .evitement { display: none !important; }
+  body { background: #fff; color: #000; }
+  h1, h2, h3 { color: #000; }
+  .carte, .fait { break-inside: avoid; border-color: #888; }
+}
+
+/* --------------------------------------------------------------------------
+   E15 — métronome des langues et mur des questions (salle 20)
+   -------------------------------------------------------------------------- */
+.langues {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.langues-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.langues-visuel img, .langues-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.langues-visuel canvas { pointer-events: none; }
+.langues-moteur { margin: .7rem 0 0; font-size: .82rem; color: var(--gris); }
+.langues-controles { margin-top: 1.1rem; }
+.langues-controles .curseur-ligne { margin-top: .5rem; }
+.langues-controles > output { display: block; margin-top: .7rem; font-weight: 600; }
+.langues-boutons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .6rem; }
+.langues-boutons .bouton { flex: 1 1 14rem; }
+.langues-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.mur-questions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
+  align-items: start;
+  gap: .9rem;
+  margin-top: 1.2rem;
+}
+.mur-question {
+  border: var(--liseret);
+  border-radius: var(--rayon);
+  background: rgba(5, 7, 13, .55);
+  padding: .2rem 1.1rem;
+}
+.mur-question summary {
+  cursor: pointer;
+  padding: .8rem 0;
+  font-weight: 600;
+  color: var(--nacre);
+}
+.mur-question[open] summary { border-bottom: var(--liseret); margin-bottom: .6rem; }
+.mur-question p { margin: .5rem 0 .8rem; }
+@media (max-width: 40rem) {
+  .langues-boutons .bouton { flex: 1 1 100%; }
+  .langues-legende { padding: .75rem .85rem; }
+}
+
+/* --------------------------------------------------------------------------
+   E16 — échelle des preuves, tri des énoncés, constellation, quiz (salles 21–22)
+   -------------------------------------------------------------------------- */
+.preuves, .constellation {
+  margin: 1.4rem 0;
+  padding: clamp(1rem, .8rem + 1.2vw, 1.8rem);
+  border: var(--liseret);
+  border-radius: var(--rayon-grand);
+  background: radial-gradient(ellipse at 50% 0%, rgba(27, 42, 90, .5), rgba(5, 7, 13, .65) 70%);
+}
+.preuves-visuel, .constellation-visuel {
+  position: relative;
+  margin: 0;
+  border-radius: var(--rayon);
+  overflow: hidden;
+  background: #02040a;
+  aspect-ratio: 16 / 9;
+}
+.preuves-visuel img, .preuves-visuel canvas,
+.constellation-visuel img, .constellation-visuel canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.preuves-visuel canvas, .constellation-visuel canvas { pointer-events: none; }
+.preuves-moteur, .constellation-moteur { margin: .7rem 0 0; font-size: .82rem; color: var(--gris); }
+.preuves-controles { margin-top: 1.1rem; }
+.preuves-controles > output { display: block; margin-top: .7rem; font-weight: 600; }
+.preuves-boutons { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .6rem; }
+.preuves-boutons .bouton { flex: 1 1 11rem; }
+.preuves-legende {
+  margin: 1rem 0 0;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--jade);
+  background: rgba(131, 214, 180, .08);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+  color: var(--nacre);
+  min-height: 3.2rem;
+}
+.constellation-choix { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.constellation-choix button { flex: 1 1 9rem; }
+.constellation-choix button[aria-pressed="true"] {
+  border-color: var(--or);
+  background: rgba(232, 193, 112, .16);
+  color: var(--nacre);
+  box-shadow: inset 0 0 0 1px var(--or);
+}
+.qualite-panneau {
+  margin-top: 1rem;
+  padding: .9rem 1.1rem;
+  border-left: 3px solid var(--or);
+  background: rgba(232, 193, 112, .07);
+  border-radius: 0 var(--rayon) var(--rayon) 0;
+}
+.qualite-panneau h3 { margin: 0 0 .4rem; }
+.qualite-verset { margin: 0 0 .7rem; font-style: italic; color: var(--nacre); }
+.qualite-verset .badge { font-style: normal; }
+.qualite-faits { margin: 0; padding: 0; list-style: none; display: grid; gap: .45rem; }
+.qualite-faits li { padding: .45rem .6rem; border-radius: var(--rayon); }
+.qualite-faits li:hover, .qualite-faits li:focus-within { background: rgba(232, 193, 112, .10); }
+.qualite-faits .fait-id { color: var(--gris); font-size: .85rem; }
+.qualite-faits a, .quiz-retour a { display: inline-block; min-height: 1.75rem; line-height: 1.75rem; padding: 0 .15rem; }
+.quiz { display: grid; gap: .9rem; margin-top: 1.2rem; }
+.quiz-question {
+  margin: 0;
+  padding: .9rem 1.1rem 1rem;
+  border: var(--liseret);
+  border-radius: var(--rayon);
+  background: rgba(5, 7, 13, .55);
+  min-width: 0;
+}
+.quiz-question legend { padding: 0 .3rem; font-weight: 600; color: var(--nacre); }
+.quiz-numero { color: var(--or); }
+.quiz-options { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: .5rem; }
+.quiz-option { display: flex; align-items: center; gap: .45rem; min-height: 2.75rem; }
+.quiz-option input { width: 1.2rem; height: 1.2rem; accent-color: var(--or); margin: 0; }
+.quiz-option label { cursor: pointer; }
+.quiz-retour { margin: .5rem 0 0; }
+.quiz-retour:empty { display: none; }
+.quiz-question[data-etat="juste"] { border-color: var(--jade); }
+.quiz-question[data-etat="juste"] .quiz-retour strong { color: var(--jade); }
+.quiz-question[data-etat="faux"] { border-color: var(--ambre); }
+.quiz-question[data-etat="faux"] .quiz-retour strong { color: var(--ambre); }
+.quiz-correction { margin-top: .5rem; font-size: .92rem; }
+.quiz-correction summary { cursor: pointer; color: var(--gris); }
+.quiz-actif .quiz-correction { display: none; }
+.quiz-pied { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .8rem; }
+.quiz-score { margin: 0; font-weight: 600; color: var(--nacre); }
+@media (max-width: 40rem) {
+  .preuves-boutons .bouton, .constellation-choix button { flex: 1 1 100%; }
+  .preuves-legende, .qualite-panneau { padding: .75rem .85rem; }
+  .quiz-options { flex-direction: column; }
+}
+
+/* --------------------------------------------------------------------------
+   Pages annexes (E17)
+   -------------------------------------------------------------------------- */
+.pied-annexes { margin-bottom: 1.2rem; }
+.pied-annexes ul { display: flex; flex-wrap: wrap; gap: .2rem 1.1rem; list-style: none; margin: 0; padding: 0; }
+.pied-annexes a { min-height: 24px; text-decoration: none; font-weight: 600; }
+.pied-annexes a:hover { text-decoration: underline; }
+.salle-entete .chapo { margin-top: .6rem; }
+/* Liens en ligne de texte : la marge intérieure porte la cible à 24 px au moins
+   sans casser le retour à la ligne (critère 2.5.8). */
+.annexe-contenu :where(p, li, dd) a { padding-block: .34em; }
+.liste-simple { padding-left: 1.3rem; display: grid; gap: .55rem; max-width: 72ch; }
+.liste-simple li::marker { color: var(--or); }
+
+.frise-periodes { list-style: none; margin: 1.6rem 0 0; padding: 0 0 0 1.4rem; border-left: 2px solid rgba(214, 178, 94, .45); display: grid; gap: 1.2rem; }
+.periode { position: relative; padding: 1.1rem 1.3rem; border-radius: var(--rayon); background: rgba(14, 20, 38, .7); border: 1px solid rgba(214, 178, 94, .18); }
+.periode::before { content: ""; position: absolute; left: calc(-1.4rem - 7px); top: 1.45rem; width: 12px; height: 12px; border-radius: 50%; background: var(--or); box-shadow: 0 0 12px rgba(214, 178, 94, .7); }
+.periode h3 { margin: .1rem 0 .2rem; font-size: 1.22rem; }
+.periode-numero { margin: 0; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--or); }
+.periode-reference { margin: 0 0 .5rem; font-size: .88rem; color: var(--gris); font-style: italic; }
+.periode-salle { font-size: .9rem; color: var(--gris); }
+
+.parcours-grille { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); margin-top: 1.4rem; }
+.parcours-carte { padding: 1.2rem 1.3rem; border-radius: var(--rayon); background: rgba(14, 20, 38, .7); border: 1px solid rgba(214, 178, 94, .2); }
+.parcours-carte h3 { margin-top: 0; }
+.parcours-duree { color: var(--or); font-size: .88rem; margin: 0 0 .5rem; }
+.parcours-etapes { padding-left: 1.5rem; display: grid; gap: .25rem; }
+.parcours-etapes a { display: inline-flex; align-items: center; min-height: 28px; }
+.parcours-plan { columns: 2 20rem; display: block; }
+.parcours-plan li { break-inside: avoid; margin-bottom: .25rem; }
+
+.faq { display: grid; gap: .7rem; margin-top: 1.4rem; max-width: 80ch; }
+.faq-item { border-radius: var(--rayon); background: rgba(14, 20, 38, .7); border: 1px solid rgba(214, 178, 94, .18); }
+.faq-item summary { cursor: pointer; padding: .9rem 1.1rem; min-height: 44px; font-weight: 600; color: var(--nacre); }
+.faq-item[open] summary { color: var(--or); }
+.faq-item p { margin: 0; padding: 0 1.1rem 1rem; }
+
+.filtre { margin: 1.2rem 0; display: grid; gap: .35rem; max-width: 34rem; }
+.filtre label { font-weight: 600; }
+.filtre input { min-height: 44px; padding: .5rem .8rem; font: inherit; color: var(--nacre); background: rgba(5, 7, 13, .8); border: 1px solid rgba(214, 178, 94, .5); border-radius: var(--rayon); }
+.filtre-etat { margin: 0; font-size: .86rem; color: var(--gris); }
+.filtre-vide { font-style: italic; color: var(--gris); }
+
+.glossaire { display: grid; gap: .9rem; margin: 0; max-width: 80ch; }
+.glossaire-entree { padding: .8rem 1.1rem; border-left: 3px solid rgba(214, 178, 94, .55); background: rgba(14, 20, 38, .55); border-radius: 0 var(--rayon) var(--rayon) 0; }
+.glossaire dt { font-weight: 700; color: var(--nacre); }
+.glossaire dd { margin: .25rem 0 0; }
+.glossaire-salles { display: block; margin-top: .25rem; font-size: .88rem; color: var(--gris); }
+
+.liste-sources { list-style: none; padding: 0; display: grid; gap: .8rem; max-width: 86ch; }
+.source { padding: .7rem 1rem; background: rgba(14, 20, 38, .55); border-radius: var(--rayon); }
+.source p { margin: 0; }
+.source-ligne { overflow-wrap: anywhere; }
+.source-cite { margin-top: .25rem !important; font-size: .86rem; color: var(--gris); }
+.credits { display: grid; gap: .8rem; max-width: 80ch; }
+.credits dt { font-weight: 700; color: var(--or); }
+.credits dd { margin: .15rem 0 0; }
+[data-filtre-item][hidden] { display: none; }
+
+/* Recherche plein texte (E18) */
+.recherche form { display: grid; gap: .4rem; max-width: 40rem; margin-top: 1rem; }
+.recherche label { font-weight: 600; }
+.recherche-ligne { display: flex; flex-wrap: wrap; gap: .6rem; }
+.recherche-ligne input { flex: 1 1 14rem; min-height: 44px; padding: .5rem .8rem; font: inherit; color: var(--nacre); background: rgba(5, 7, 13, .8); border: 1px solid rgba(214, 178, 94, .5); border-radius: var(--rayon); }
+.recherche-ligne .bouton { min-height: 44px; }
+.recherche-resultats { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .9rem; max-width: 80ch; }
+.recherche-resultat { padding: .9rem 1.1rem; border-radius: var(--rayon); background: rgba(14, 20, 38, .7); border: 1px solid rgba(214, 178, 94, .18); }
+.recherche-resultat h3 { margin: 0 0 .3rem; font-size: 1.15rem; }
+.recherche-resultat h3 a { display: inline-flex; align-items: center; min-height: 28px; }
+.recherche-extrait { margin: 0; color: var(--nacre-2); font-size: .95rem; }
+.recherche-extrait mark { background: rgba(214, 178, 94, .3); color: var(--nacre); border-radius: .2rem; padding: 0 .1em; }
+.contraste-renforce .recherche-extrait mark { background: #FFE08A; color: #000208; }
+
+/* Lecture biblique de la rubrique RÉFLEXION (E18, D083) */
+.lecture-biblique { margin-top: 1.4rem; }
+.lecture-biblique h3 { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; font-size: 1.12rem; color: var(--lapis); }
+.verset { margin: .8rem 0 .3rem; padding: .2rem 0 .2rem 1.1rem; border-left: 2px solid var(--or); font-family: var(--police-titres); font-size: 1.12rem; font-style: italic; color: var(--nacre); max-width: 62ch; }
+.verset p { margin: 0; }
+.verset-reference { margin: 0 0 .7rem 1.1rem; font-size: .86rem; color: var(--gris); }
+.pied a, .note a { padding-block: .3em; }

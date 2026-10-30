@@ -1,0 +1,2915 @@
+[
+  {
+    "id": "F-001",
+    "salle": "01",
+    "enonce": "Dans le modèle cosmologique de référence à constante cosmologique et matière noire froide, l'âge de l'Univers est de 13,787 ± 0,020 milliards d'années.",
+    "source_ids": [
+      "S001"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur dépendante du modèle ajusté sur le fond diffus cosmologique ; ce n'est pas une datation directe ni une mesure d'horloge.",
+    "theme": "cosmologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-002",
+    "salle": "01",
+    "enonce": "La même analyse du fond diffus cosmologique donne une constante de Hubble de 67,4 ± 0,5 kilomètres par seconde et par mégaparsec.",
+    "source_ids": [
+      "S001"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "D'autres méthodes de mesure donnent des valeurs supérieures ; ce désaccord est un sujet de recherche actif.",
+    "theme": "cosmologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-003",
+    "salle": "01",
+    "enonce": "La densité de matière totale estimée par cette analyse est de 0,315 ± 0,007 fois la densité critique.",
+    "source_ids": [
+      "S001"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Grandeur sans dimension issue du même ajustement de paramètres.",
+    "theme": "cosmologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-004",
+    "salle": "01",
+    "enonce": "En 2025, la collaboration DESI a publié une préférence pour une énergie sombre variable, avec des écarts de 2,8 σ, 3,8 σ et 4,2 σ selon les trois compilations de supernovae utilisées.",
+    "source_ids": [
+      "S002",
+      "S003"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les trois échantillons se recouvrent partiellement ; on ne peut ni choisir le plus favorable ni les moyenner. Aucune découverte au seuil de 5 σ n'est revendiquée.",
+    "theme": "énergie sombre",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-005",
+    "salle": "01",
+    "enonce": "Une combinaison statistique rigoureuse des données DESI et du fond diffus cosmologique, sans supernovae, donne un écart de 3,1 σ au modèle à constante cosmologique.",
+    "source_ids": [
+      "S003",
+      "S002"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Cortês et Liddle (2025) considèrent cette valeur comme l'inférence la plus sûre : indice, pas certitude.",
+    "theme": "énergie sombre",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-006",
+    "salle": "01",
+    "enonce": "La galaxie MoM-z14 a un décalage vers le rouge spectroscopique de 14,44, avec une incertitude de 0,02 de part et d'autre.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Confirmation par spectroscopie NIRSpec/PRISM du télescope spatial James Webb, et non simple estimation photométrique.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-007",
+    "salle": "01",
+    "enonce": "La lumière de MoM-z14 a été émise environ 280 millions d'années après le début de l'expansion de l'Univers.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Conversion du décalage vers le rouge en temps cosmique dans le modèle standard ; ordre de grandeur.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-008",
+    "salle": "01",
+    "enonce": "MoM-z14 a une magnitude absolue ultraviolette de −20,2 et cinq raies d'émission dans l'ultraviolet détectées à environ 3 σ.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le relevé spectroscopique repose sur une rupture de Lyman-alpha nette et ces raies.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-009",
+    "salle": "01",
+    "enonce": "Dans le relevé « Mirage or Miracle », la densité de galaxies brillantes à décalage vers le rouge 14–15 est estimée plus de 100 fois supérieure aux modèles d'avant le télescope James Webb.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Estimation de 182, avec une incertitude de +329 et −105, sur environ 350 minutes d'arc carrées : l'intervalle est très large.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-010",
+    "salle": "01",
+    "enonce": "MoM-z14 est très compacte, avec un rayon effectif de 74 parsecs, mais allongée, ce qui rend peu probable une domination de sa lumière par un noyau galactique actif.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Rayon de 74 +15/−12 parsecs ; rapport d'axes de 0,25.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-011",
+    "salle": "01",
+    "enonce": "Le spectre de MoM-z14 présente un rapport azote sur carbone supérieur à un, signature chimique inattendue à une époque aussi reculée.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les auteurs rapprochent cette signature de celle d'amas globulaires anciens ; l'interprétation reste ouverte.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-012",
+    "salle": "01",
+    "enonce": "Le rythme de formation d'étoiles de MoM-z14 a été environ dix fois plus élevé au cours des cinq derniers millions d'années que sur les cinquante derniers millions d'années.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Rapport de 9,9 avec une incertitude de +3,0 et −5,8 : ordre de grandeur.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-013",
+    "salle": "01",
+    "enonce": "Chaque seconde, le Soleil convertit environ quatre millions de tonnes de sa propre matière en énergie.",
+    "source_ids": [
+      "S010",
+      "S011"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur : 4,3 × 10^9 kilogrammes par seconde, déduit de la luminosité solaire et de la relation masse-énergie.",
+    "theme": "énergie stellaire",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-014",
+    "salle": "01",
+    "enonce": "Toujours chaque seconde, le Soleil transforme environ 600 millions de tonnes d'hydrogène en 596 millions de tonnes d'hélium.",
+    "source_ids": [
+      "S010",
+      "S011"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les « tonnes » des sources anglaises sont des tonnes métriques dans ce calcul ; l'écart de masse devient énergie.",
+    "theme": "énergie stellaire",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-015",
+    "salle": "01",
+    "enonce": "Le fait que l'Univers ait une histoire mesurable ne départage pas, à lui seul, les diverses explications philosophiques de son origine.",
+    "source_ids": [
+      "S001"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : une donnée cosmologique n'est pas une conclusion métaphysique.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-016",
+    "salle": "02",
+    "enonce": "Une estimation naïve de l'énergie du vide par la théorie quantique des champs, avec une coupure à l'échelle de Planck, dépasse la valeur observée d'environ 120 ordres de grandeur.",
+    "source_ids": [
+      "S007"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Il s'agit d'un écart entre une prédiction théorique naïve et une valeur observée, non d'une mesure. Selon la coupure, la littérature cite 10^120 à 10^122 ; certains auteurs jugent cette comparaison trompeuse car l'énergie se calcule comme une puissance quatrième de l'échelle de masse.",
+    "theme": "constante cosmologique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-017",
+    "salle": "02",
+    "enonce": "En 1989, Steven Weinberg a résumé le problème ainsi : les observations astronomiques indiquent une constante cosmologique de nombreux ordres de grandeur plus petite que les estimations des théories modernes des particules.",
+    "source_ids": [
+      "S007"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Reformulation fidèle du résumé de l'article de synthèse, qui passe en revue cinq pistes de solution.",
+    "theme": "constante cosmologique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-018",
+    "salle": "02",
+    "enonce": "Dans un modèle stellaire publié en 2000, modifier la force nucléaire forte de 0,5 % ou la force coulombienne de 4 % réduit la production stellaire de carbone ou d'oxygène d'un facteur compris entre 30 et 1 000.",
+    "source_ids": [
+      "S005",
+      "S033"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat de modélisation de la réaction triple alpha, dépendant des paramètres stellaires choisis ; ce n'est pas une mesure expérimentale de lois différentes.",
+    "theme": "réglage fin",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-019",
+    "salle": "02",
+    "enonce": "Le carbone 12 possède un état excité de spin zéro et de parité positive à 7,65 mégaélectronvolts, appelé état de Hoyle.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Deuxième état excité du noyau de carbone 12 ; son existence conditionne la vitesse de la réaction triple alpha.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-020",
+    "salle": "02",
+    "enonce": "Fred Hoyle avait annoncé une résonance vers 7,68 mégaélectronvolts ; l'expérience de Cook et ses collègues en 1957 l'a mesurée à 7,653 ± 0,008 mégaélectronvolts.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur adoptée ultérieurement : 7,65407 mégaélectronvolts. Hoyle était athée et ne croyait pas à un univers ayant commencé.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-021",
+    "salle": "02",
+    "enonce": "La résonance prédite par Hoyle a été recherchée au laboratoire Kellogg du Caltech au moyen de la réaction azote 14 (deuton, alpha) carbone 12, avec un spectromètre à haute résolution.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Épisode historique rapporté par la synthèse de Freer et Fynbo (2014).",
+    "theme": "histoire des sciences",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-022",
+    "salle": "02",
+    "enonce": "L'interprétation du décalage entre l'énergie du vide calculée et la constante cosmologique observée reste ouverte : nouvelle symétrie, gravité modifiée, ajustement fin ou raison anthropique sont discutés.",
+    "source_ids": [
+      "S007"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Aucune de ces pistes ne fait aujourd'hui consensus.",
+    "theme": "constante cosmologique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-023",
+    "salle": "02",
+    "enonce": "La sensibilité des modèles stellaires aux valeurs des forces peut être lue comme une invitation à réfléchir à l'ordre de la nature ; cette lecture reste d'ordre spirituel et non une conclusion de laboratoire.",
+    "source_ids": [
+      "S005",
+      "S007"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : distinguer l'émotion légitime devant un résultat et l'usage apologétique qu'on en fait.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-024",
+    "salle": "03",
+    "enonce": "En 1960, Eugene Wigner a publié une conférence donnée en 1959 intitulée « L'efficacité déraisonnable des mathématiques dans les sciences de la nature ».",
+    "source_ids": [
+      "S012"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Conférence Richard Courant du 11 mai 1959 à l'université de New York, publiée dans Communications on Pure and Applied Mathematics.",
+    "theme": "histoire des sciences",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-025",
+    "salle": "03",
+    "enonce": "Wigner y soutient que l'immense utilité des mathématiques en sciences de la nature « frôle le mystérieux » et qu'il n'existe pas d'explication rationnelle à ce fait.",
+    "source_ids": [
+      "S012"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Citation du texte original ; traduction personnelle de travail.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-026",
+    "salle": "03",
+    "enonce": "Wigner rappelle la formule attribuée à Galilée selon laquelle les lois de la nature sont écrites en langage mathématique, et la juge plus vraie encore à son époque.",
+    "source_ids": [
+      "S012"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Il s'agit d'une attribution faite par Wigner, pas d'une citation textuelle de Galilée vérifiée.",
+    "theme": "histoire des sciences",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-027",
+    "salle": "03",
+    "enonce": "Le succès des mathématiques pour décrire la nature pose une question philosophique ouverte ; il ne constitue pas une mesure expérimentale d'une cause.",
+    "source_ids": [
+      "S012"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : ne pas transformer une interrogation épistémologique en argument d'autorité.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-028",
+    "salle": "04",
+    "enonce": "Le relevé « Mirage or Miracle » qui a mis au jour MoM-z14 couvre environ 350 minutes d'arc carrées.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Environ un tiers de la surface de la pleine Lune sur le ciel.",
+    "theme": "observation",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-029",
+    "salle": "04",
+    "enonce": "Le décalage vers le rouge de MoM-z14 a été établi grâce à une rupture de Lyman-alpha nette et à cinq raies d'émission dans l'ultraviolet.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La spectroscopie, et non la seule couleur de la galaxie, fonde la valeur de 14,44.",
+    "theme": "observation",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-030",
+    "salle": "04",
+    "enonce": "Aucune aile d'amortissement prononcée n'a été détectée dans le spectre de MoM-z14, ce qui suggère un voisinage partiellement ionisé à une époque où de nombreux modèles prédisent un gaz presque entièrement neutre.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les auteurs parlent d'un indice « tentatif » ; la conclusion dépend des modèles de réionisation.",
+    "theme": "réionisation",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-031",
+    "salle": "04",
+    "enonce": "Un décalage vers le rouge de 14,44 signifie que les longueurs d'onde de la lumière reçue ont été multipliées par environ 15,44 pendant leur trajet.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Conséquence directe de la définition du décalage vers le rouge : un plus z.",
+    "theme": "observation",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-032",
+    "salle": "04",
+    "enonce": "La possibilité d'observer des objets dont la lumière a voyagé plus de treize milliards d'années repose sur des instruments, des modèles et des milliers de vérifications croisées.",
+    "source_ids": [
+      "S004",
+      "S001"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : rappel que l'émerveillement s'appuie ici sur un travail collectif patient.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-033",
+    "salle": "05",
+    "enonce": "Selon les calculs de Laskar, Joutel et Robutel (1993), la présence de la Lune maintient l'inclinaison de l'axe terrestre dans une plage de ± 1,3° autour de 23,3°.",
+    "source_ids": [
+      "S009"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat de simulations de mécanique céleste à long terme, non une mesure directe sur des temps géologiques.",
+    "theme": "mécanique céleste",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-034",
+    "salle": "05",
+    "enonce": "Dans les mêmes simulations, une Terre privée de Lune pourrait voir son inclinaison errer de façon chaotique entre environ 0° et 85°.",
+    "source_ids": [
+      "S009"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur issu d'un modèle de 1993 ; des travaux ultérieurs discutent l'ampleur réelle de cette instabilité.",
+    "theme": "mécanique céleste",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-035",
+    "salle": "05",
+    "enonce": "La mesure dans laquelle la Lune est nécessaire à un climat stable et à la vie reste discutée : l'article de 1993 donne une amplitude dynamique, pas une conclusion biologique.",
+    "source_ids": [
+      "S009"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Ne pas transformer une stabilisation de l'axe en condition indispensable à toute vie.",
+    "theme": "mécanique céleste",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-036",
+    "salle": "05",
+    "enonce": "Un satellite unique, de taille et de distance particulières, contribue à la régularité des saisons ; cette corrélation peut nourrir une réflexion sans être tenue pour une démonstration.",
+    "source_ids": [
+      "S009"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : la corrélation entre configuration et stabilité n'établit pas une intention.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-037",
+    "salle": "06",
+    "enonce": "Dans l'air sec, l'azote représente 78,084 % et l'oxygène 20,946 % du volume, selon la table de composition de l'agence américaine NOAA.",
+    "source_ids": [
+      "S034",
+      "S035"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "L'air réel contient en plus une quantité variable de vapeur d'eau ; les valeurs s'entendent pour l'air sec.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-038",
+    "salle": "06",
+    "enonce": "L'argon (0,934 %) et le dioxyde de carbone (0,042 %) complètent les quatre gaz qui forment 99,998 % de l'air sec.",
+    "source_ids": [
+      "S034"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeurs de la table NOAA ; la teneur en dioxyde de carbone augmente lentement et doit être datée.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-039",
+    "salle": "06",
+    "enonce": "La masse totale de l'atmosphère terrestre est estimée à 5,1 × 10^18 kilogrammes et la pression moyenne au sol à 1 014 millibars.",
+    "source_ids": [
+      "S035"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Fiche de données planétaires de la NASA.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-040",
+    "salle": "06",
+    "enonce": "Une enveloppe gazeuse à la fois assez épaisse pour protéger et assez transparente pour laisser passer la lumière peut être lue comme une condition remarquable ; cette lecture reste une réflexion, non une conclusion de chimie atmosphérique.",
+    "source_ids": [
+      "S034",
+      "S035"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : la composition actuelle résulte aussi de l'histoire de la vie.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-041",
+    "salle": "07",
+    "enonce": "À pression atmosphérique normale, l'eau liquide atteint sa densité maximale à 3,98 °C, et non à son point de congélation.",
+    "source_ids": [
+      "S036"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur de référence NIST/IAPWS ; la plupart des liquides, eux, deviennent régulièrement plus denses en refroidissant.",
+    "theme": "propriétés de l'eau",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-042",
+    "salle": "07",
+    "enonce": "Cette densité maximale vaut 0,999975 gramme par centimètre cube.",
+    "source_ids": [
+      "S036"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Soit 999,975 kilogrammes par mètre cube.",
+    "theme": "propriétés de l'eau",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-043",
+    "salle": "07",
+    "enonce": "Comme l'eau à 4 °C est plus dense que l'eau plus froide, les lacs gèlent par la surface et non par le fond.",
+    "source_ids": [
+      "S036"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Conséquence du maximum de densité ; c'est une propriété inhabituelle parmi les liquides courants.",
+    "theme": "propriétés de l'eau",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-044",
+    "salle": "07",
+    "enonce": "Une anomalie thermodynamique aussi discrète rend possible la vie aquatique sous la glace ; la qualifier de « prévue » relève de la réflexion personnelle, pas de la thermodynamique.",
+    "source_ids": [
+      "S036"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : ne pas confondre utilité biologique et finalité établie.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-045",
+    "salle": "08",
+    "enonce": "Selon le service américain de conservation des sols, une cuillère à café de sol contient plus de micro-organismes qu'il n'y a d'êtres humains sur la Terre.",
+    "source_ids": [
+      "S037"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur pédagogique, pas un dénombrement précis et universel.",
+    "theme": "sols vivants",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-046",
+    "salle": "08",
+    "enonce": "Un gramme de sol, soit environ un quart de cuillère à café, peut contenir un milliard de cellules bactériennes et plusieurs kilomètres de filaments fongiques.",
+    "source_ids": [
+      "S038"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Estimation de chercheurs de l'université de Californie à Davis ; elle varie fortement selon le sol.",
+    "theme": "sols vivants",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-047",
+    "salle": "08",
+    "enonce": "Le nombre de taxons différents dans une cuillère de sol est estimé entre 10 000 et 50 000, chiffre régulièrement révisé par les techniques de séquençage.",
+    "source_ids": [
+      "S038"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les auteurs eux-mêmes présentent cette estimation comme difficile et évolutive.",
+    "theme": "sols vivants",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-048",
+    "salle": "08",
+    "enonce": "Les micro-organismes du sol ne représentent qu'environ un demi-pour-cent de la masse du sol, tout en assurant l'essentiel de la transformation de la matière organique en humus.",
+    "source_ids": [
+      "S037"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur donné par la brochure du NRCS.",
+    "theme": "sols vivants",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-049",
+    "salle": "08",
+    "enonce": "L'idée d'une Terre « façonnée pour être habitée » donne un sens spirituel à l'étude des cycles ; elle n'est pas mesurable dans une expérience de biologie des sols.",
+    "source_ids": [
+      "S037",
+      "S038"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : articulation avec le cadre biblique interne, sans le publier comme tel.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-050",
+    "salle": "09",
+    "enonce": "Une molécule unique d'ATP synthase bactérienne a été observée tournant à une vitesse maximale de 352 ± 16 tours par seconde à 37 °C.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Vitesse maximale extrapolée d'un ajustement de Michaelis-Menten, mesurée sur des molécules isolées in vitro.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-051",
+    "salle": "09",
+    "enonce": "La rotation de ce moteur se décompose en un sous-pas de 80° puis un sous-pas de 40°, soit un pas complet de 120°.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les valeurs plus anciennes de 90° et 30° ont été révisées par les auteurs.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-052",
+    "salle": "09",
+    "enonce": "La constante de Michaelis de cette rotation est de 31 ± 7 micromolaires pour l'ATP.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesure à 37 °C sur l'enzyme de Bacillus PS3.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-053",
+    "salle": "09",
+    "enonce": "En 1997, Noji et ses collègues ont observé directement, pour la première fois, la rotation d'une molécule isolée de F1-ATPase.",
+    "source_ids": [
+      "S014"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Article fondateur de l'étude des moteurs moléculaires en molécule unique.",
+    "theme": "histoire des sciences",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-054",
+    "salle": "09",
+    "enonce": "La kinésine avance sur un microtubule par pas discrets de 8 nanomètres, en consommant une molécule d'ATP par pas.",
+    "source_ids": [
+      "S015"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesure à charge quasi nulle ; le couplage peut varier sous forte contrainte mécanique.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-055",
+    "salle": "09",
+    "enonce": "Une molécule de kinésine effectue en moyenne une centaine de pas avant de se détacher de son microtubule.",
+    "source_ids": [
+      "S015"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Propriété dite de processivité, mesurée in vitro.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-056",
+    "salle": "09",
+    "enonce": "Dans certaines conditions contrôlées, le travail maximal fourni par la F1-ATPase par pas de 120° est presque égal au maximum thermodynamique permis par l'hydrolyse d'un ATP.",
+    "source_ids": [
+      "S016"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "D'autres travaux soulignent un rendement inférieur à 100 % selon la vitesse et les conditions ; formuler comme « proche du maximum », jamais « égal à 100 % ».",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-057",
+    "salle": "09",
+    "enonce": "Le corps humain renouvelle environ 330 ± 20 milliards de cellules par jour, soit à peu près 3,8 millions par seconde.",
+    "source_ids": [
+      "S017"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Calcul pour une personne de référence de 70 kilogrammes ; près de 90 % sont des cellules sanguines.",
+    "theme": "renouvellement",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-058",
+    "salle": "09",
+    "enonce": "Ce renouvellement correspond à une masse de 80 ± 20 grammes de cellules par jour.",
+    "source_ids": [
+      "S017"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les cellules sanguines dominent en nombre, les cellules de l'intestin en masse relative.",
+    "theme": "renouvellement",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-059",
+    "salle": "09",
+    "enonce": "L'étude de 2021 prend pour référence un corps d'environ 30 000 milliards de cellules.",
+    "source_ids": [
+      "S017"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur ; d'autres études donnent des totaux proches de 37 000 milliards.",
+    "theme": "renouvellement",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-060",
+    "salle": "09",
+    "enonce": "Observer un moteur tournant dans une cellule peut susciter une interrogation sur l'origine de l'organisation du vivant ; cette interrogation n'est pas un résultat de biochimie.",
+    "source_ids": [
+      "S013",
+      "S014"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : séparer la description mécanistique et la question du pourquoi.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-061",
+    "salle": "10",
+    "enonce": "En 2017, Erlich et Zielinski ont montré qu'un codage de l'information dans l'ADN permet une densité de 215 pétaoctets par gramme.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Densité atteinte à la limite de leur architecture, en récupérant parfaitement les données ; ce n'est pas un dispositif de stockage du commerce.",
+    "theme": "information",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-062",
+    "salle": "10",
+    "enonce": "Ce codage atteint environ 1,6 bit par nucléotide, soit environ 85 % de la limite théorique de Shannon pour ce canal.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les auteurs donnent 1,57 à 1,6 bit par nucléotide et une limite voisine de 1,8 bit.",
+    "theme": "information",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-063",
+    "salle": "10",
+    "enonce": "L'expérience a stocké puis relu sans erreur un ensemble de 2,14 × 10^6 octets comprenant un système d'exploitation et un film.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La relecture a réussi avec une couverture de séquençage équivalente à une seule tuile d'un séquenceur Illumina.",
+    "theme": "information",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-064",
+    "salle": "10",
+    "enonce": "La densité de 215 pétaoctets par gramme ne signifie pas que l'ADN est un support pratique : la synthèse et le séquençage restent lents et très coûteux.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les coûts évoluent vite ; toute comparaison chiffrée avec un disque dur doit être datée.",
+    "theme": "information",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-065",
+    "salle": "10",
+    "enonce": "Comparer le génome à un texte suppose une convention de lecture ; cette métaphore aide à comprendre mais ne dit pas qui, ni quoi, a voulu dire quelque chose.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : la métaphore du code est un outil, pas un argument.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-066",
+    "salle": "11",
+    "enonce": "En 2016, une équipe a synthétisé un génome bactérien minimal de 531 000 paires de bases et de 473 gènes, capable de faire vivre une cellule qui se réplique.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Cellule nommée JCVI-syn3.0 ; temps de doublement d'environ 180 minutes.",
+    "theme": "biologie synthétique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-067",
+    "salle": "11",
+    "enonce": "Sur ces 473 gènes, 149 avaient une fonction encore inconnue en 2016, soit environ 31 % du génome minimal.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Rappel utile : « minimal » ne veut pas dire « entièrement compris ».",
+    "theme": "biologie synthétique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-068",
+    "salle": "11",
+    "enonce": "Le génome minimal n'a pas été assemblé à partir de matière inerte : il a été conçu, synthétisé puis transplanté dans une cellule receveuse déjà vivante.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Présenter ce travail comme une création de la vie à partir de rien serait inexact.",
+    "theme": "biologie synthétique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-069",
+    "salle": "11",
+    "enonce": "La première conception du génome minimal a échoué ; il a fallu conserver des gènes dits quasi essentiels pour obtenir une croissance robuste.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Trois cycles de conception, synthèse et test ont été nécessaires.",
+    "theme": "biologie synthétique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-070",
+    "salle": "11",
+    "enonce": "L'idée que la vie procède de la vie est une conviction spirituelle nourrie par l'histoire des sciences ; les expériences sur l'origine de la vie ne la confirment ni ne l'infirment en laboratoire.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Aucune date précise n'est publiée pour les travaux de Pasteur tant que la source primaire n'a pas été vérifiée (décision D014).",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-071",
+    "salle": "12",
+    "enonce": "En 2017, une réanalyse du complexe FMO de bactéries photosynthétiques à température ambiante n'a pas trouvé de cohérence quantique électronique de longue durée : celle-ci disparaît en environ 60 femtosecondes.",
+    "source_ids": [
+      "S025"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Ce résultat corrige des interprétations antérieures de signaux oscillants allant jusqu'à 1,5 picoseconde.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-072",
+    "salle": "12",
+    "enonce": "Une étude de 2018 a montré que, même à 77 kelvins, la décohérence électronique du complexe FMO s'achève en 240 femtosecondes et que les oscillations durables sont d'origine vibrationnelle.",
+    "source_ids": [
+      "S027"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Spectroscopie électronique bidimensionnelle contrôlée en polarisation.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-073",
+    "salle": "12",
+    "enonce": "Une synthèse de 2020 conclut que les battements de longue durée observés dans le complexe FMO proviennent de modes de vibration et non de cohérences électroniques entre excitons.",
+    "source_ids": [
+      "S026"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Synthèse évaluée par les pairs ; elle ne nie pas tout effet quantique en biologie, mais celui-là précis.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-074",
+    "salle": "12",
+    "enonce": "Présenter la photosynthèse comme « une calculatrice quantique » relève d'une extrapolation ; la mécanique quantique décrit la matière, mais son rôle fonctionnel précis reste à établir cas par cas.",
+    "source_ids": [
+      "S025",
+      "S026"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION à afficher à côté du badge DÉBATTU dans la salle.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-075",
+    "salle": "13",
+    "enonce": "La mesure directe d'une seule soie de gecko a donné une force d'adhérence moyenne de 194 ± 25 micronewtons, soit dix fois plus que les estimations déduites de l'animal entier.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesure par capteur de force microélectromécanique, sur 28 échantillons.",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-076",
+    "salle": "13",
+    "enonce": "Un pied de gecko porte près de 500 000 soies de kératine, longues de 30 à 130 micromètres.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Chaque soie a un diamètre environ dix fois plus petit qu'un cheveu humain.",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-077",
+    "salle": "13",
+    "enonce": "Chaque soie se termine par des centaines de spatules de 0,2 à 0,5 micromètre.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Cette hiérarchie multiplie la surface de contact réelle.",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-078",
+    "salle": "13",
+    "enonce": "Si toutes les soies adhéraient en même temps et au maximum, un seul pied pourrait produire environ 100 newtons de force d'adhérence.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur théorique calculée par extrapolation, jamais observée chez l'animal complet.",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-079",
+    "salle": "13",
+    "enonce": "Les mesures de 2000 soutiennent l'hypothèse de forces de van der Waals, mais des travaux ultérieurs ajoutent une contribution capillaire secondaire.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Ne pas écrire que le mécanisme est « définitivement tranché ».",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-080",
+    "salle": "13",
+    "enonce": "Copier une structure biologique dans un matériau ne reproduit pas la totalité du système vivant ; l'admiration pour l'original et l'ingénierie humaine sont deux choses distinctes.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : éviter l'argument qui conclut de l'imitation à l'intention.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-081",
+    "salle": "14",
+    "enonce": "Onze sternes arctiques équipées de géolocateurs ont parcouru en moyenne 70 900 kilomètres par an, avec des valeurs individuelles de 59 500 à 81 600 kilomètres.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Étude publiée en 2010 ; certains individus dépassent 80 000 kilomètres.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-082",
+    "salle": "14",
+    "enonce": "Le trajet vers le sud représente 34 600 kilomètres à environ 330 kilomètres par jour.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les oiseaux marquent une escale d'environ un mois en plein Atlantique Nord.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-083",
+    "salle": "14",
+    "enonce": "Le retour vers le nord couvre 25 700 kilomètres en seulement 93 jours, soit environ 520 kilomètres par jour.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le trajet de retour est plus court mais plus rapide, avec une route en S à travers l'Atlantique.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-084",
+    "salle": "14",
+    "enonce": "Les géolocateurs utilisés pesaient 1,4 gramme, pour des oiseaux de moins de 125 grammes.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La miniaturisation de l'instrument a rendu l'étude possible.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-085",
+    "salle": "14",
+    "enonce": "En 2022, une barge rousse juvénile a relié l'Alaska à la Tasmanie sans escale : 13 560 kilomètres en 11 jours et 1 heure.",
+    "source_ids": [
+      "S022",
+      "S023"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Record documenté par balise satellitaire de 5 grammes et confirmé par deux organismes indépendants.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-086",
+    "salle": "14",
+    "enonce": "L'oiseau record était âgé d'environ cinq mois et effectuait sa première migration.",
+    "source_ids": [
+      "S022"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le caractère inné de l'orientation est une interprétation, pas une mesure.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-087",
+    "salle": "14",
+    "enonce": "Qu'un oiseau de cent grammes traverse deux fois la planète chaque année peut inspirer une réflexion sur la durée et la persévérance ; cela n'explique pas le mécanisme de son orientation.",
+    "source_ids": [
+      "S021",
+      "S022"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : distinguer l'émotion et l'explication.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-088",
+    "salle": "15",
+    "enonce": "Les oiseaux chanteurs migrateurs nocturnes utilisent, parmi d'autres repères, une boussole magnétique dépendante de la lumière.",
+    "source_ids": [
+      "S024"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Phénomène comportemental établi ; le récepteur précis reste l'objet de recherches.",
+    "theme": "magnétoréception",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-089",
+    "salle": "15",
+    "enonce": "En 2021, la photochimie du cryptochrome 4 du rouge-gorge européen s'est révélée magnétosensible en éprouvette, davantage que celle du poulet et du pigeon.",
+    "source_ids": [
+      "S024"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Expérience in vitro sur des protéines produites en culture bactérienne.",
+    "theme": "magnétoréception",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-090",
+    "salle": "15",
+    "enonce": "Quatre paires radicalaires successives flavine-tryptophane interviennent dans les effets magnétiques observés sur cette protéine.",
+    "source_ids": [
+      "S024"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat obtenu par mutagenèse dirigée et calculs de dynamique de spin.",
+    "theme": "magnétoréception",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-091",
+    "salle": "15",
+    "enonce": "La rétine des oiseaux contient quatre types de cryptochromes, et le cryptochrome 4 y est localisé dans des cônes dont les gouttelettes lipidiques absorbent les courtes longueurs d'onde.",
+    "source_ids": [
+      "S024"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les auteurs eux-mêmes jugent « plutôt improbable » le rôle de récepteur de ce cryptochrome dans ces cônes : ne pas conclure à une preuve chez l'oiseau vivant.",
+    "theme": "magnétoréception",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-092",
+    "salle": "16",
+    "enonce": "Les sternes arctiques du Groenland et d'Islande utilisent une même zone d'escale en plein Atlantique Nord, inconnue avant l'étude de 2010.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Zone située à environ 1 000 kilomètres au nord des Açores.",
+    "theme": "comportement collectif",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-093",
+    "salle": "16",
+    "enonce": "Les deux populations passent environ un mois dans cette zone avant de poursuivre vers le sud.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Comportement de ravitaillement, déduit des trajectoires.",
+    "theme": "comportement collectif",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-094",
+    "salle": "16",
+    "enonce": "Le trajet de retour des sternes dessine une grande courbe en S au milieu de l'Atlantique, probablement pour tirer parti des vents dominants.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "L'explication par les vents est une interprétation proposée, pas une mesure de vent embarquée.",
+    "theme": "comportement collectif",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-095",
+    "salle": "16",
+    "enonce": "Une carte de 139 255 neurones et de 54,5 millions de synapses a été établie pour le cerveau complet d'une drosophile adulte.",
+    "source_ids": [
+      "S031"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Première carte synaptique complète d'un cerveau d'animal capable de marcher et de voir.",
+    "theme": "réseaux",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-096",
+    "salle": "16",
+    "enonce": "Des comportements coordonnés émergent de réseaux dont on peut aujourd'hui compter les éléments, sans que le dénombrement suffise à les expliquer.",
+    "source_ids": [
+      "S031",
+      "S032"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : la carte n'est pas le territoire.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-097",
+    "salle": "17",
+    "enonce": "La sensibilité magnétique du cryptochrome 4 est expliquée par la dynamique de spin de paires radicalaires, un phénomène relevant de la mécanique quantique.",
+    "source_ids": [
+      "S024"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Effet démontré en éprouvette sur la protéine isolée.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-098",
+    "salle": "17",
+    "enonce": "L'analyse de 2021 indique que la paire radicalaire formée lors de la réoxydation, et non celle de la photoréduction, serait déterminante pour la détection de la direction magnétique.",
+    "source_ids": [
+      "S024"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Conclusion de modélisation propre à cette étude ; d'autres mécanismes restent proposés.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-099",
+    "salle": "17",
+    "enonce": "Le terme « quantique » décrit des règles physiques précises et mesurables ; il ne désigne pas une propriété mystérieuse qui dispenserait de preuves.",
+    "source_ids": [
+      "S024",
+      "S025",
+      "S026"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : lutter contre les usages sensationnalistes du mot.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-100",
+    "salle": "18",
+    "enonce": "Le cœur humain bat environ 100 000 fois par jour.",
+    "source_ids": [
+      "S039",
+      "S040"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur : à 70 battements par minute, le calcul donne environ 100 800 battements.",
+    "theme": "physiologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-101",
+    "salle": "18",
+    "enonce": "Au repos, le cœur pompe environ cinq litres de sang par minute.",
+    "source_ids": [
+      "S039",
+      "S040"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur de repos chez l'adulte ; elle augmente fortement à l'effort.",
+    "theme": "physiologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-102",
+    "salle": "18",
+    "enonce": "La longueur totale du réseau de vaisseaux sanguins est couramment estimée à environ 96 000 kilomètres chez l'adulte.",
+    "source_ids": [
+      "S040",
+      "S052"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Chiffre de vulgarisation : il dérive du calcul de Krogh (1922) pour les seuls capillaires musculaires, fondé sur une densité trop élevée et une personne de 143 kg (F-184, S052). Ne pas le présenter comme une mesure.",
+    "theme": "physiologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1",
+    "revision": "E14 : nuance réécrite après lecture de Poole et al. 2021 (A-029)."
+  },
+  {
+    "id": "F-103",
+    "salle": "18",
+    "enonce": "Le corps renouvelle chaque jour environ 330 milliards de cellules, dont près de neuf sur dix sont des cellules sanguines.",
+    "source_ids": [
+      "S017"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Calcul pour une personne de référence de 70 kilogrammes.",
+    "theme": "physiologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-104",
+    "salle": "18",
+    "enonce": "La régularité d'un battement et le renouvellement silencieux des cellules peuvent nourrir une réflexion sur la fragilité et la continuité de la vie.",
+    "source_ids": [
+      "S017",
+      "S039"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : ne pas confondre description physiologique et jugement de valeur.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-105",
+    "salle": "19",
+    "enonce": "Le cerveau humain adulte contient en moyenne 86,1 ± 8,1 milliards de neurones.",
+    "source_ids": [
+      "S028"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Méthode du fractionneur isotropique, sur des cerveaux d'hommes adultes.",
+    "theme": "neuroanatomie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-106",
+    "salle": "19",
+    "enonce": "Il contient aussi 84,6 ± 9,8 milliards de cellules non neuronales, soit presque autant que de neurones.",
+    "source_ids": [
+      "S028"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "L'ancienne affirmation « dix fois plus de cellules gliales » est inexacte.",
+    "theme": "neuroanatomie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-107",
+    "salle": "19",
+    "enonce": "Seuls 19 % des neurones se trouvent dans le cortex cérébral, alors que celui-ci représente 82 % de la masse du cerveau.",
+    "source_ids": [
+      "S028"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat qui relativise les comparaisons fondées sur la seule taille du cortex.",
+    "theme": "neuroanatomie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-108",
+    "salle": "19",
+    "enonce": "En 2024, un millimètre cube de cortex temporal humain a été reconstruit à résolution nanométrique : 1,4 pétaoctet de données.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Jeu de données H01, imagé en microscopie électronique à 4 × 4 nanomètres par pixel.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-109",
+    "salle": "19",
+    "enonce": "Ce minuscule échantillon contenait 57 180 cellules, environ 150 millions de synapses et 230 millimètres de vaisseaux sanguins.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Soit environ 16 000 neurones, 32 000 cellules gliales et 8 000 cellules associées aux vaisseaux.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-110",
+    "salle": "19",
+    "enonce": "En 2025, le consortium MICrONS a publié une carte de 1,6 pétaoctet d'un millimètre cube de cortex visuel de souris, avec 523 millions de synapses.",
+    "source_ids": [
+      "S030"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Carte couplant anatomie et activité enregistrée chez l'animal éveillé.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-111",
+    "salle": "19",
+    "enonce": "Cette carte de souris comprend plus de 200 000 cellules, environ 4 kilomètres d'axones et l'activité d'environ 75 000 neurones.",
+    "source_ids": [
+      "S030"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Certaines sources secondaires donnent 5,4 kilomètres d'axones ; retenir la valeur de l'institut Allen.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-112",
+    "salle": "19",
+    "enonce": "La carte complète du cerveau d'une drosophile femelle compte 139 255 neurones et environ 54,5 millions de synapses chimiques.",
+    "source_ids": [
+      "S031"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Données publiées en 2024 par le consortium FlyWire.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-113",
+    "salle": "19",
+    "enonce": "Les neurones de cette drosophile ont été classés en 8 453 types cellulaires, couvrant 96,4 % des neurones, dont 4 581 types nouveaux.",
+    "source_ids": [
+      "S032"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Environ un tiers des types proposés pour le demi-cerveau antérieur n'ont pas pu être retrouvés.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-114",
+    "salle": "19",
+    "enonce": "Compter les synapses ne suffit pas à rendre compte d'une pensée, d'un souvenir ou d'une conscience : la mesure anatomique et l'expérience vécue ne sont pas de même ordre.",
+    "source_ids": [
+      "S029",
+      "S030",
+      "S028"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : garder une distinction nette entre données et interprétation.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-115",
+    "salle": "20",
+    "enonce": "La composition cellulaire du cerveau humain est celle d'un cerveau de primate agrandi, avec un très grand nombre absolu de neurones.",
+    "source_ids": [
+      "S028"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les auteurs de 2009 soulignent que la singularité humaine ne se lit pas dans les seuls rapports cellulaires.",
+    "theme": "neuroanatomie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-116",
+    "salle": "20",
+    "enonce": "Le besoin de sens, la curiosité et la question de l'origine ne se mesurent pas en nombre de synapses ; ils relèvent de l'expérience humaine et de la réflexion.",
+    "source_ids": [
+      "S028",
+      "S029"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : articulation avec le thème biblique de l'image de Dieu, sans le présenter comme une donnée biologique.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-117",
+    "salle": "21",
+    "enonce": "Les résultats rassemblés dans ce musée relèvent de trois registres distincts : faits établis, questions débattues et réflexions personnelles.",
+    "source_ids": [
+      "S001",
+      "S003",
+      "S025"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Principe d'honnêteté du projet : ne jamais faire passer un indice pour une certitude.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-118",
+    "salle": "21",
+    "enonce": "Un indice statistique de 3,1 σ, une expérience in vitro et une conviction spirituelle n'ont pas le même statut de preuve.",
+    "source_ids": [
+      "S003",
+      "S024"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : la balance des explications est un exercice de discernement.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-119",
+    "salle": "22",
+    "enonce": "La régularité des lois physiques, la fécondité des mécanismes du vivant et la beauté des formes observées peuvent être lues comme le reflet de qualités d'un Créateur.",
+    "source_ids": [
+      "S012",
+      "S013",
+      "S029"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Il s'agit d'une lecture croyante assumée comme telle, non d'une conclusion imposée par les données.",
+    "theme": "synthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-120",
+    "salle": "22",
+    "enonce": "Aucune mesure scientifique ne départage à elle seule les convictions religieuses ; la démarche de ce musée est de proposer une lecture, en laissant chacun libre d'y adhérer.",
+    "source_ids": [
+      "S001",
+      "S007"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : conclusion générale du parcours.",
+    "theme": "synthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-121",
+    "salle": "01",
+    "enonce": "La pente du spectre ultraviolet de MoM-z14 vaut −2,5 ± 0,2, ce qui indique très peu de poussière et une population d'étoiles jeune.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Pente dite bêta ; conclusion dépendante des modèles de population stellaire.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-122",
+    "salle": "01",
+    "enonce": "Les raies d'émission ultraviolette de MoM-z14 ont des largeurs équivalentes d'environ 15 à 35 angströms.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ces valeurs élevées signalent une montée récente de la formation d'étoiles.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-123",
+    "salle": "01",
+    "enonce": "Le rapport d'axes apparent de MoM-z14 est de 0,25, avec une incertitude de +0,11 et −0,06.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Cette forme allongée est l'un des arguments contre une domination de la lumière par un noyau actif.",
+    "theme": "galaxies primitives",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-124",
+    "salle": "04",
+    "enonce": "La lumière ultraviolette émise par MoM-z14 nous parvient décalée dans l'infrarouge proche, domaine de travail du spectrographe NIRSpec.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Conséquence directe du facteur 15,44 d'allongement des longueurs d'onde.",
+    "theme": "observation",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-125",
+    "salle": "04",
+    "enonce": "L'estimation de densité de galaxies très lointaines repose sur un seul relevé d'environ 350 minutes d'arc carrées ; sa généralisation à tout le ciel reste incertaine.",
+    "source_ids": [
+      "S004"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les auteurs donnent une incertitude de +329 et −105 sur le facteur 182.",
+    "theme": "observation",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-126",
+    "salle": "01",
+    "enonce": "La luminosité solaire de 3,9 × 10^26 watts, divisée par le carré de la vitesse de la lumière, correspond à une perte de masse de 4,3 × 10^9 kilogrammes par seconde.",
+    "source_ids": [
+      "S011"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Application de la relation masse-énergie au bilan énergétique du Soleil.",
+    "theme": "énergie stellaire",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-127",
+    "salle": "01",
+    "enonce": "Fusionner un kilogramme d'hydrogène en hélium libère environ 630 000 milliards de joules, soit près de cinq millions de fois plus que la combustion du même kilogramme d'hydrogène.",
+    "source_ids": [
+      "S011"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Comparaison donnée dans un cours d'astronomie universitaire ; ordre de grandeur.",
+    "theme": "énergie stellaire",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-128",
+    "salle": "02",
+    "enonce": "La largeur totale adoptée de l'état de Hoyle est de 9,3 ± 0,9 électronvolt.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur déduite de la table de la synthèse de 2014.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-129",
+    "salle": "02",
+    "enonce": "La largeur radiative de transition électrique quadrupolaire de l'état de Hoyle est de 3,7 ± 0,4 milliélectronvolt.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Grandeur notée gamma E2 dans la synthèse.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-130",
+    "salle": "02",
+    "enonce": "La valeur adoptée de l'énergie de l'état de Hoyle est de 7,65407 mégaélectronvolts, avec une incertitude de 0,00019 mégaélectronvolt.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Moyenne de plusieurs mesures compilées dans la synthèse.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-131",
+    "salle": "02",
+    "enonce": "La structure de l'état de Hoyle serait dominée par des amas de particules alpha plutôt que par des nucléons individuels.",
+    "source_ids": [
+      "S006"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Interprétation théorique présentée comme « supposée » par les auteurs de la synthèse.",
+    "theme": "structure nucléaire",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-132",
+    "salle": "02",
+    "enonce": "L'article de synthèse de Weinberg publié en 1989 passe en revue cinq approches différentes du problème de la constante cosmologique.",
+    "source_ids": [
+      "S007"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le résumé annonce explicitement cinq approches après un rappel historique.",
+    "theme": "constante cosmologique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-133",
+    "salle": "02",
+    "enonce": "L'étude de 2000 porte sur les taux de production stellaire du carbone et leurs conséquences sur son abondance dans l'Univers.",
+    "source_ids": [
+      "S005"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Titre même de l'article de Science.",
+    "theme": "nucléosynthèse",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-134",
+    "salle": "02",
+    "enonce": "Les fenêtres de sensibilité de 0,5 % et 4 % sont exprimées relativement aux valeurs que prennent les forces dans notre Univers.",
+    "source_ids": [
+      "S033"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ce sont des variations relatives dans un modèle, non des univers alternatifs observés.",
+    "theme": "réglage fin",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-135",
+    "salle": "07",
+    "enonce": "La température du maximum de densité de l'eau lourde est de 11,60 °C, contre 3,98 °C pour l'eau ordinaire.",
+    "source_ids": [
+      "S036"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Propriétés fixes comparées dans la même publication du NIST.",
+    "theme": "propriétés de l'eau",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-136",
+    "salle": "07",
+    "enonce": "La valeur de 3,98 °C s'entend à la pression normale de 101,325 kilopascal.",
+    "source_ids": [
+      "S036"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La température du maximum de densité se déplace avec la pression.",
+    "theme": "propriétés de l'eau",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-137",
+    "salle": "06",
+    "enonce": "Au sol, la masse volumique de l'air est d'environ 1,217 kilogramme par mètre cube et la hauteur d'échelle de l'atmosphère de 8,5 kilomètres.",
+    "source_ids": [
+      "S035"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeurs de la fiche planétaire de la NASA.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-138",
+    "salle": "06",
+    "enonce": "La température moyenne au sol retenue dans cette fiche est de 288 kelvins, soit environ 15 °C.",
+    "source_ids": [
+      "S035"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Moyenne globale, très éloignée des températures extrêmes locales.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-139",
+    "salle": "06",
+    "enonce": "La masse totale de l'hydrosphère terrestre est estimée à 1,4 × 10^21 kilogrammes.",
+    "source_ids": [
+      "S035"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "À comparer aux 5,1 × 10^18 kilogrammes de l'atmosphère.",
+    "theme": "hydrosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-140",
+    "salle": "06",
+    "enonce": "L'air sec contient environ 18,2 parties par million de néon et 5,24 parties par million d'hélium.",
+    "source_ids": [
+      "S034"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Gaz traces de la table NOAA.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-141",
+    "salle": "06",
+    "enonce": "L'air sec contient environ 1,9 partie par million de méthane et 1,14 partie par million de krypton.",
+    "source_ids": [
+      "S034"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La teneur en méthane varie dans le temps ; valeur de la table NOAA.",
+    "theme": "atmosphère",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-142",
+    "salle": "08",
+    "enonce": "Selon le service américain de conservation des sols, les organismes présents dans les quinze premiers centimètres d'un acre de sol pèsent entre 2 500 et plus de 5 000 livres, soit environ 1 100 à 2 300 kilogrammes.",
+    "source_ids": [
+      "S037"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Estimation très dépendante de la santé du sol ; un acre vaut environ 0,4 hectare.",
+    "theme": "sols vivants",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-143",
+    "salle": "08",
+    "enonce": "Parmi les organismes du sol figurent des bactéries, des algues, des protozoaires, des nématodes, des champignons, des vers de terre, des insectes et des acariens.",
+    "source_ids": [
+      "S037"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Liste donnée par la brochure du NRCS.",
+    "theme": "sols vivants",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-144",
+    "salle": "09",
+    "enonce": "La constante de vitesse d'association de l'ATP au moteur étudié a été estimée à 3,6 × 10^7 par mole et par seconde.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesure à faible concentration d'ATP, pendant les pauses d'attente.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-145",
+    "salle": "09",
+    "enonce": "À 25 °C, la vitesse maximale de rotation est d'environ 230 tours par seconde ; à 45 °C, elle atteint environ 650 tours par seconde.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesures sur la même enzyme à trois températures.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-146",
+    "salle": "09",
+    "enonce": "Un inhibiteur spécifique de la translocation des protons, le chlorure de tributylétain, ralentit la rotation de 96 %.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat qui confirme le couplage entre la portion membranaire et la rotation.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-147",
+    "salle": "09",
+    "enonce": "Les auteurs extrapolent une vitesse d'environ 1 600 tours par seconde à 60 °C, température optimale de croissance de la bactérie étudiée.",
+    "source_ids": [
+      "S013"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Il s'agit d'une extrapolation, pas d'une mesure à 60 °C.",
+    "theme": "moteurs moléculaires",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-148",
+    "salle": "10",
+    "enonce": "Le procédé DNA Fountain a été testé pour un nombre de relectures de l'échantillon initial estimé à 2,18 × 10^15, avec décodage parfait.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Test de robustesse de l'architecture, pas une mesure de durée de conservation.",
+    "theme": "information",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-149",
+    "salle": "10",
+    "enonce": "Une archive de 2,14 mégaoctets a été relue sans erreur après plusieurs cycles d'amplification par polymérase.",
+    "source_ids": [
+      "S018"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "L'amplification permet de copier l'échantillon sans perdre l'information.",
+    "theme": "information",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-150",
+    "salle": "11",
+    "enonce": "Le génome de 473 gènes de JCVI-syn3.0 compte 35 gènes codant des ARN.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Précision donnée par l'annonce officielle de l'institut en 2016.",
+    "theme": "biologie synthétique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-151",
+    "salle": "11",
+    "enonce": "Le génome de JCVI-syn3.0 est plus petit que celui de toute cellule capable de se répliquer de façon autonome observée dans la nature.",
+    "source_ids": [
+      "S019"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Formulation des auteurs de l'article de Science.",
+    "theme": "biologie synthétique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-152",
+    "salle": "12",
+    "enonce": "Des expériences antérieures avaient interprété des oscillations durant jusqu'à 1,5 picoseconde comme des cohérences électroniques de longue durée.",
+    "source_ids": [
+      "S025"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Rappel historique fait par les auteurs de la réanalyse de 2017.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-153",
+    "salle": "12",
+    "enonce": "Dans l'étude de 2018, les cohérences vibrationnelles de longue durée sont produites par des états excités à couplage vibronique.",
+    "source_ids": [
+      "S027"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Conclusion tirée de la spectroscopie contrôlée en polarisation.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-154",
+    "salle": "13",
+    "enonce": "La mesure de 2000 repose sur un capteur de force microélectromécanique bidimensionnel et sur un fil servant de jauge de force.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Deux dispositifs indépendants ont été utilisés pour mesurer une soie isolée.",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-155",
+    "salle": "13",
+    "enonce": "La force théorique d'environ 100 newtons par pied correspondrait à une pression de l'ordre de dix atmosphères.",
+    "source_ids": [
+      "S020"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Extrapolation des auteurs, jamais observée sur l'animal entier.",
+    "theme": "biomimétisme",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-156",
+    "salle": "14",
+    "enonce": "Les sternes étudiées parcourent en moyenne 10 900 kilomètres à l'intérieur même de leur zone d'hivernage.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mouvements locaux inclus dans le bilan annuel de 70 900 kilomètres.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-157",
+    "salle": "14",
+    "enonce": "Le retour vers le nord dure environ 93 jours, pour un trajet qui ne représente que les trois quarts de la distance du trajet vers le sud.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le retour est plus court et nettement plus rapide.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-158",
+    "salle": "14",
+    "enonce": "Les sternes arctiques suivies pesaient moins de 125 grammes.",
+    "source_ids": [
+      "S021"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Condition nécessaire pour que le géolocateur de 1,4 gramme soit supportable.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-159",
+    "salle": "14",
+    "enonce": "La barge rousse record portait un émetteur solaire de 5 grammes fixé sur le croupion.",
+    "source_ids": [
+      "S022"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Instrument posé avant le départ de l'Alaska.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-160",
+    "salle": "14",
+    "enonce": "Le vol record de 2022 a commencé le 13 octobre en Alaska et s'est achevé le 24 octobre en Tasmanie.",
+    "source_ids": [
+      "S023"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Soit 11 jours et 1 heure de vol continu.",
+    "theme": "migration",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-161",
+    "salle": "19",
+    "enonce": "Dans l'échantillon H01, les cellules gliales sont environ deux fois plus nombreuses que les neurones.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Environ 32 000 cellules gliales pour 16 000 neurones dans le millimètre cube.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-162",
+    "salle": "19",
+    "enonce": "Sur les 57 180 cellules de H01, 49 080 sont des neurones ou des cellules gliales et 8 100 sont associées aux vaisseaux sanguins.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Décompte détaillé de l'article de Science.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-163",
+    "salle": "19",
+    "enonce": "Les chercheurs estiment le nombre de synapses excitatrices de H01 à 102,5 millions et celui des synapses inhibitrices à 50,3 millions.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Soit environ 67 % et 33 % après correction des erreurs de classification.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-164",
+    "salle": "19",
+    "enonce": "L'échantillon H01 a été découpé en plus de 5 000 coupes d'environ 34 nanomètres d'épaisseur avant d'être imagé.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La reconstruction a ensuite nécessité l'assemblage informatique des images.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-165",
+    "salle": "19",
+    "enonce": "Certaines paires de cellules de H01 sont reliées par plus de 50 synapses, alors que la plupart ne le sont que par une seule.",
+    "source_ids": [
+      "S029"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ces connexions rares et puissantes ont retenu l'attention des auteurs.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-166",
+    "salle": "19",
+    "enonce": "Le jeu de données MICrONS couvre les six couches du cortex visuel primaire et trois aires visuelles supérieures d'une souris éveillée.",
+    "source_ids": [
+      "S030"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les enregistrements fonctionnels ont été faits pendant que l'animal regardait des stimuli.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-167",
+    "salle": "19",
+    "enonce": "La carte du demi-cerveau de drosophile qui précédait FlyWire proposait environ 5 235 types cellulaires.",
+    "source_ids": [
+      "S032"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Comparaison faite par les auteurs de l'atlas de 2024.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-168",
+    "salle": "19",
+    "enonce": "Sur les 8 453 types cellulaires de FlyWire, 3 643 avaient déjà été proposés et 4 581 sont nouveaux.",
+    "source_ids": [
+      "S032"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ces deux nombres ne totalisent pas exactement 8 453 en raison des recouvrements de classification.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-169",
+    "salle": "19",
+    "enonce": "Environ un tiers des types cellulaires proposés pour le demi-cerveau n'ont pas pu être retrouvés de façon fiable dans la carte complète.",
+    "source_ids": [
+      "S032"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Les auteurs invoquent des régions absentes du volume partiel et des critères de classification différents.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-170",
+    "salle": "19",
+    "enonce": "Le cerveau complet d'un nématode compte 302 neurones, contre 139 255 chez la drosophile adulte.",
+    "source_ids": [
+      "S031"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Comparaison faite par les auteurs pour situer l'échelle de leur carte.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-171",
+    "salle": "19",
+    "enonce": "La carte FlyWire peut être représentée comme un graphe de 139 255 nœuds et d'environ 15,1 millions d'arêtes pondérées.",
+    "source_ids": [
+      "S032"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les arêtes correspondent aux connexions synaptiques agrégées.",
+    "theme": "connectomique",
+    "date_verification": "2026-10-27",
+    "lot": "E02-lot1"
+  },
+  {
+    "id": "F-172",
+    "salle": "17",
+    "enonce": "En 2023, le moment magnétique de l'électron a été mesuré à g/2 = 1,001 159 652 180 59, avec une incertitude de 0,13 partie par mille milliards.",
+    "source_ids": [
+      "S041"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesure sur un électron unique piégé ; c'est la propriété d'une particule élémentaire la mieux déterminée à ce jour.",
+    "theme": "physique quantique",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-173",
+    "salle": "17",
+    "enonce": "Cette mesure teste la prédiction la plus précise du modèle standard de la physique des particules à environ une partie sur mille milliards.",
+    "source_ids": [
+      "S041"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La comparaison dépend de la valeur de la constante de structure fine, dont les mesures indépendantes divergent légèrement.",
+    "theme": "physique quantique",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-174",
+    "salle": "17",
+    "enonce": "La valeur recommandée en 2022 de l'inverse de la constante de structure fine est 137,035 999 177, avec une incertitude relative de 1,6 × 10⁻¹⁰.",
+    "source_ids": [
+      "S042"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Nombre sans dimension qui fixe l'intensité de l'interaction électromagnétique ; il est mesuré, aucune théorie admise n'en prédit la valeur.",
+    "theme": "constantes",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-175",
+    "salle": "17",
+    "enonce": "Dyson et Lenard ont démontré en 1967 que la stabilité de la matière ordinaire repose sur le principe d'exclusion de Pauli appliqué aux électrons ; Lieb et Thirring en ont donné une preuve plus courte en 1975.",
+    "source_ids": [
+      "S045",
+      "S046"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat de physique mathématique : l'énergie d'un morceau de matière reste proportionnelle au nombre de ses particules.",
+    "theme": "stabilité de la matière",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-176",
+    "salle": "17",
+    "enonce": "Si les électrons étaient des bosons, non soumis au principe d'exclusion, l'énergie de liaison croîtrait plus vite que le nombre de particules et la matière en vrac ne serait pas stable.",
+    "source_ids": [
+      "S047",
+      "S045"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Calcul théorique sur une situation hypothétique ; il montre le rôle du principe d'exclusion, pas un univers alternatif observé.",
+    "theme": "stabilité de la matière",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-177",
+    "salle": "17",
+    "enonce": "Dans plusieurs enzymes, le transfert d'un atome d'hydrogène lors de la rupture d'une liaison carbone-hydrogène se fait en partie par effet tunnel quantique, mis en évidence par les effets isotopiques cinétiques.",
+    "source_ids": [
+      "S043"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Établi pour des réactions de transfert d'hydrogène ; cela ne s'étend pas à toute la catalyse enzymatique.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-178",
+    "salle": "17",
+    "enonce": "Le rôle exact des mouvements de la protéine dans ces transferts par effet tunnel reste discuté : contribution dynamique directe à la catalyse pour les uns, désaccord en partie terminologique pour les autres.",
+    "source_ids": [
+      "S043",
+      "S044"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "Débat actif en enzymologie ; nous ne tranchons pas.",
+    "theme": "biologie quantique",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-179",
+    "salle": "17",
+    "enonce": "La concordance entre calcul et mesure jusqu'à une partie sur mille milliards montre que l'invisible obéit à des lois intelligibles ; y lire la marque d'un Créateur est une lecture personnelle, non une conclusion de la physique.",
+    "source_ids": [
+      "S041",
+      "S042"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : la physique décrit la régularité, elle ne se prononce pas sur son origine.",
+    "theme": "épistémologie",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-180",
+    "salle": "17",
+    "enonce": "À la surface de la Terre, l'intensité totale du champ magnétique varie d'environ 22 000 à 67 000 nanoteslas, soit 22 à 67 microteslas.",
+    "source_ids": [
+      "S048"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le champ varie selon le lieu et lentement dans le temps ; son minimum se situe au-dessus de l'Amérique du Sud.",
+    "theme": "géomagnétisme",
+    "date_verification": "2026-10-28",
+    "lot": "E13-lot2"
+  },
+  {
+    "id": "F-181",
+    "salle": "18",
+    "enonce": "Un homme de référence de 70 kilogrammes compte environ 30 000 milliards de cellules humaines, soit 3,0 × 10¹³.",
+    "source_ids": [
+      "S049",
+      "S050"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Estimation par calcul : incertitude d'environ 2 % et variation d'environ 14 % entre individus ; une estimation de 2013 donnait 3,7 × 10¹³.",
+    "theme": "anatomie",
+    "date_verification": "2026-10-28",
+    "lot": "E14"
+  },
+  {
+    "id": "F-182",
+    "salle": "18",
+    "enonce": "Les globules rouges représentent à eux seuls environ 84 % du nombre de cellules humaines du corps.",
+    "source_ids": [
+      "S049"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "En nombre, pas en masse : ce sont parmi les plus petites cellules du corps ; en masse, les cellules musculaires et graisseuses dominent.",
+    "theme": "sang",
+    "date_verification": "2026-10-28",
+    "lot": "E14"
+  },
+  {
+    "id": "F-183",
+    "salle": "18",
+    "enonce": "Le corps d'un homme de référence héberge environ 38 000 milliards de bactéries, soit environ 1,3 bactérie par cellule humaine, et non dix fois plus comme on l'a longtemps répété.",
+    "source_ids": [
+      "S049"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Ordre de grandeur : ces bactéries vivent surtout dans le côlon et leur nombre varie, notamment au fil de la digestion.",
+    "theme": "microbiote",
+    "date_verification": "2026-10-28",
+    "lot": "E14"
+  },
+  {
+    "id": "F-184",
+    "salle": "18",
+    "enonce": "Le chiffre souvent cité de 100 000 kilomètres de vaisseaux remonte à un calcul d'August Krogh en 1922, portant sur les seuls capillaires des muscles, avec une densité plusieurs fois supérieure à celle du muscle humain et une personne de 143 kilogrammes.",
+    "source_ids": [
+      "S052"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Les estimations actuelles sont nettement inférieures ; aucune longueur totale n'a été mesurée directement.",
+    "theme": "circulation",
+    "date_verification": "2026-10-28",
+    "lot": "E14"
+  },
+  {
+    "id": "F-185",
+    "salle": "19",
+    "enonce": "Chez l'adulte, le cerveau représente environ 2 % du poids du corps mais consomme environ 20 % de l'oxygène, donc de l'énergie, de l'organisme.",
+    "source_ids": [
+      "S051"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeurs moyennes chez l'adulte au repos ; la source ne donne pas de puissance en watts.",
+    "theme": "énergie du cerveau",
+    "date_verification": "2026-10-28",
+    "lot": "E14"
+  },
+  {
+    "id": "F-186",
+    "salle": "19",
+    "enonce": "Cette consommation d'énergie du cerveau reste remarquablement constante malgré de grandes variations de l'activité mentale et motrice.",
+    "source_ids": [
+      "S051"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Une tâche intense ne modifie la consommation que localement et faiblement : l'essentiel de la dépense correspond à une activité de fond permanente.",
+    "theme": "énergie du cerveau",
+    "date_verification": "2026-10-28",
+    "lot": "E14"
+  },
+  {
+    "id": "F-187",
+    "salle": "20",
+    "enonce": "L'édition 2026 de l'inventaire Ethnologue recense 7 170 langues vivantes dans le monde.",
+    "source_ids": [
+      "S053"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Le nombre exact ne peut pas être connu : il dépend de la frontière entre langue et dialecte et de l'état des connaissances ; l'édition 2025 en comptait 7 159.",
+    "theme": "langage",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-188",
+    "salle": "20",
+    "enonce": "Dans 17 langues lues par 170 locuteurs, le débit d'information de la parole se concentre autour de 39 bits par seconde en moyenne, avec un écart type d'environ 5 bits par seconde.",
+    "source_ids": [
+      "S054"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Textes lus à voix haute, et non conversation spontanée ; 17 langues de 9 familles, toutes parlées en Eurasie.",
+    "theme": "langage",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-189",
+    "salle": "20",
+    "enonce": "Dans cette étude, les langues qui portent peu d'information par syllabe sont parlées plus vite, et celles qui en portent beaucoup plus lentement : le débit moyen est de 6,63 syllabes par seconde.",
+    "source_ids": [
+      "S054"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Corrélation négative nette (coefficient de Pearson −0,71) ; les langues se ressemblent davantage par leur débit d'information que par leur débit de syllabes.",
+    "theme": "langage",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-190",
+    "salle": "20",
+    "enonce": "Les 17 langues étudiées portent de 5 à 8 bits d'information par syllabe ; le japonais compte environ onze fois moins de syllabes distinctes que l'anglais.",
+    "source_ids": [
+      "S054",
+      "S055"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Densité estimée à partir de corpus écrits ; un bit correspond à un choix entre deux possibilités équiprobables.",
+    "theme": "langage",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-191",
+    "salle": "20",
+    "enonce": "La plupart des nourrissons anglophones de 6 à 8 mois distinguent des sons du hindi et d'une langue salish absents de l'anglais ; à 10 à 12 mois, très peu y parviennent encore, alors que les bébés exposés à ces langues conservent la distinction.",
+    "source_ids": [
+      "S056"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Résultat fondateur de 1984, retrouvé depuis pour d'autres contrastes ; chez l'adulte, un entraînement permet parfois de retrouver en partie la sensibilité perdue.",
+    "theme": "langage",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-192",
+    "salle": "20",
+    "enonce": "Une analyse de 315 sociétés décrites par l'ethnographie a trouvé de la musique dans chacune d'elles.",
+    "source_ids": [
+      "S057"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La base décrivait la musique dans 309 sociétés ; des documents extérieurs l'attestent pour les 6 autres.",
+    "theme": "musique",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-193",
+    "salle": "20",
+    "enonce": "Dans les 60 sociétés étudiées en détail, toutes ont des chants avec paroles, et la musique accompagne partout des situations comme les soins aux nourrissons, la guérison, la danse et l'amour.",
+    "source_ids": [
+      "S057"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Échantillon représentatif mais limité ; les comportements musicaux varient davantage au sein d'une même société qu'entre sociétés.",
+    "theme": "musique",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-194",
+    "salle": "20",
+    "enonce": "Dans une expérience de 2006, 22 enfants de 18 mois sur 24 ont aidé spontanément un adulte inconnu au moins une fois, presque toujours en quelques secondes, sans qu'il le demande ni les récompense.",
+    "source_ids": [
+      "S058"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Trois jeunes chimpanzés ont aussi aidé, de façon fiable, à attraper des objets hors de portée : l'entraide n'est pas propre à l'humain.",
+    "theme": "entraide",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-195",
+    "salle": "20",
+    "enonce": "Dans des conversations enregistrées à la maison, de jeunes enfants posaient en moyenne environ 76 questions de recherche d'information par heure aux adultes.",
+    "source_ids": [
+      "S059"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Quatre enfants anglophones de 1 à 5 ans : ordre de grandeur, non généralisable tel quel ; la part des « pourquoi » et des « comment » augmente avec l'âge.",
+    "theme": "curiosité",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-196",
+    "salle": "20",
+    "enonce": "Les auteurs de l'étude sur les 17 langues suggèrent que ce débit commun d'environ 39 bits par seconde reflète une capacité de traitement partagée par le cerveau humain ; cette interprétation reste une hypothèse.",
+    "source_ids": [
+      "S054"
+    ],
+    "niveau": "DEBATTU",
+    "statut": "verifie",
+    "nuance": "L'étude mesure une convergence ; elle ne démontre pas sa cause, et ne porte que sur 17 langues lues à voix haute.",
+    "theme": "langage",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-197",
+    "salle": "20",
+    "enonce": "Parler, chanter, aider un inconnu, demander « pourquoi » : la Bible relie ces traits à la création de l'humain « à l'image de Dieu » ; y voir la marque d'un Créateur est une lecture croyante, non une donnée biologique.",
+    "source_ids": [
+      "S057",
+      "S058",
+      "S059"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : les mesures décrivent des comportements ; elles ne se prononcent pas sur leur origine ultime.",
+    "theme": "réflexion",
+    "date_verification": "2026-10-28",
+    "lot": "E15"
+  },
+  {
+    "id": "F-198",
+    "salle": "21",
+    "enonce": "En physique des particules, une découverte exige habituellement un écart de 5 σ : la probabilité qu'une simple fluctuation du bruit de fond produise un tel signal est de 2,87 × 10⁻⁷, soit environ une chance sur 3,5 millions.",
+    "source_ids": [
+      "S060"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Convention propre à ce domaine ; la revue de référence rappelle que la confiance dépend aussi de la plausibilité de l'hypothèse et des erreurs systématiques, que le nombre de σ ne mesure pas.",
+    "theme": "statistique",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-199",
+    "salle": "21",
+    "enonce": "Selon la même relation, un écart de 3 σ correspond à une probabilité d'environ 1,35 × 10⁻³, soit environ une chance sur 740 : on parle alors d'indice, non de découverte.",
+    "source_ids": [
+      "S060"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Valeur unilatérale de la loi normale ; l'écart de 3,1 σ entre DESI et le modèle à constante cosmologique (F-005) relève de cette catégorie.",
+    "theme": "statistique",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-200",
+    "salle": "21",
+    "enonce": "En 2015, la réplication de 100 études de psychologie a obtenu des résultats significatifs dans 36 % des cas, contre 97 % pour les études originales, avec des effets en moyenne deux fois plus faibles.",
+    "source_ids": [
+      "S061"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Une réplication non significative ne prouve pas à elle seule que l'effet original était faux ; les auteurs combinent cinq indicateurs.",
+    "theme": "reproductibilité",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-201",
+    "salle": "21",
+    "enonce": "En 2011, l'expérience OPERA a annoncé des neutrinos arrivés environ 60 nanosecondes plus tôt que la lumière ; après la découverte de deux problèmes instrumentaux, la mesure corrigée de 2012 s'est révélée compatible avec la vitesse de la lumière.",
+    "source_ids": [
+      "S062"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "La collaboration avait elle-même publié son résultat en appelant à des vérifications ; l'écart final est de 6,5 ± 7,4 nanosecondes (statistique), sur un trajet d'environ 730 km.",
+    "theme": "correction",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-202",
+    "salle": "21",
+    "enonce": "En 2014, l'expérience BICEP2 a annoncé un signal attribué aux ondes gravitationnelles primordiales, l'absence de signal étant défavorisée à 7,0 σ ; l'analyse conjointe avec Planck en 2015 a montré qu'il s'expliquait par la poussière de notre galaxie.",
+    "source_ids": [
+      "S063",
+      "S064"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Un nombre élevé de σ mesure l'improbabilité d'une fluctuation, non la justesse de l'interprétation ; l'article de 2014 mentionnait déjà le risque lié à la poussière.",
+    "theme": "correction",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-203",
+    "salle": "21",
+    "enonce": "Un nombre de σ, une expérience en éprouvette et une conviction spirituelle ne pèsent pas de la même façon ; la Bible invite elle aussi à tout examiner avant de retenir ce qui est bon.",
+    "source_ids": [
+      "S060",
+      "S062",
+      "S064"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : 1 Thessaloniciens 5:21 et Actes 17:11 sont cités comme une invitation au discernement, non comme une méthode scientifique.",
+    "theme": "discernement",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-204",
+    "salle": "22",
+    "enonce": "Plus de quarante ans de tirs laser vers des réflecteurs posés sur la Lune n'ont détecté aucune variation de la constante de gravitation : la limite obtenue est de l'ordre de 10⁻¹³ par an.",
+    "source_ids": [
+      "S065"
+    ],
+    "niveau": "ETABLI",
+    "statut": "verifie",
+    "nuance": "Mesure : (7,1 ± 7,6) × 10⁻¹⁴ par an, compatible avec zéro ; elle ne porte que sur la période d'observation.",
+    "theme": "constance des lois",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  },
+  {
+    "id": "F-205",
+    "salle": "22",
+    "enonce": "La Bible affirme que les qualités invisibles de Dieu se discernent à travers ce qu'il a fait, et le présente comme celui chez qui il n'y a pas de variation ; y voir un écho à la constance des lois mesurées est une lecture croyante.",
+    "source_ids": [
+      "S041",
+      "S065"
+    ],
+    "niveau": "REFLEXION",
+    "statut": "verifie",
+    "nuance": "Badge RÉFLEXION : Romains 1:20 et Jacques 1:17 en traduction personnelle ; les mesures de constance ne démontrent pas Dieu.",
+    "theme": "réflexion",
+    "date_verification": "2026-10-28",
+    "lot": "E16"
+  }
+]
